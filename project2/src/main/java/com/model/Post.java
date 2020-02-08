@@ -45,13 +45,13 @@ public class Post {
 	@JoinColumn(name = "post_user_id")
 	private User postUser;
 
-	@OneToOne(mappedBy = "youtTubeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "ytPost", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<YouTubeLink> postYtLink;
 
-	@OneToMany(mappedBy = "commentId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "commentPost", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Comment> postComment;
 
-	@OneToMany(mappedBy = "likeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "likePost", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Like> postLike;
 
 	public int getPostId() {

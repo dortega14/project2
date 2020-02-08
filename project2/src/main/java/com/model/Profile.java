@@ -30,7 +30,7 @@ public class Profile {
 
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "profile_user_id")
-	private User user;
+	private User profileUser;
 
 	public int getProfileId() {
 		return profileId;
@@ -57,11 +57,11 @@ public class Profile {
 	}
 
 	public User getUser() {
-		return user;
+		return profileUser;
 	}
 
 	public void setUser(User user) {
-		this.user = user;
+		this.profileUser = user;
 	}
 
 	public Profile(int profileId, String bio, Blob coverImage, User user) {
@@ -69,12 +69,12 @@ public class Profile {
 		this.profileId = profileId;
 		this.bio = bio;
 		this.coverImage = coverImage;
-		this.user = user;
+		this.profileUser = user;
 	}
 
 	@Override
 	public String toString() {
-		return "Profile [profileId=" + profileId + ", bio=" + bio + ", coverImage=" + coverImage + ", user=" + user
+		return "Profile [profileId=" + profileId + ", bio=" + bio + ", coverImage=" + coverImage + ", user=" + profileUser
 				+ "]";
 	}
 

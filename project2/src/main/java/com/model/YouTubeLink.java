@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -23,9 +23,9 @@ public class YouTubeLink {
 	@Column(name = "link")
 	private String link;
 
-	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "yt_post_id")
-	private Post post;
+	private Post ytPost;
 
 	public int getYouTubeId() {
 		return youTubeId;
@@ -44,11 +44,11 @@ public class YouTubeLink {
 	}
 
 	public Post getPost() {
-		return post;
+		return ytPost;
 	}
 
 	public void setPost(Post post) {
-		this.post = post;
+		this.ytPost = post;
 	}
 
 }

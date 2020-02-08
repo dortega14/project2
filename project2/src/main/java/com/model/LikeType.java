@@ -9,7 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -24,7 +24,7 @@ public class LikeType {
 	@Column(name = "like_type")
 	private String likeType;
 
-	@OneToOne(mappedBy = "likeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "likeLikeType", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Like> likeTypeLike;
 
 	public int getLikeTypeId() {
@@ -49,6 +49,12 @@ public class LikeType {
 
 	public void setLikeTypeLike(Set<Like> likeTypeLike) {
 		this.likeTypeLike = likeTypeLike;
+	}
+
+	public LikeType(int likeTypeId, String likeType) {
+		super();
+		this.likeTypeId = likeTypeId;
+		this.likeType = likeType;
 	}
 
 	public LikeType(int likeTypeId, String likeType, Set<Like> likeTypeLike) {

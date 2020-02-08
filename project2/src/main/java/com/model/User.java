@@ -37,13 +37,13 @@ public class User {
 	@Column(name = "email")
 	private String email;
 	
-	@OneToOne(mappedBy = "profileId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private Set<Profile> profile;
+	@OneToOne(mappedBy = "profileUser", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Profile profile;
 
-	@OneToMany(mappedBy = "commentId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "commentUser", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Comment> userComment;
 	
-	@OneToMany(mappedBy = "likeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "likeUser", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Like> userLike;
 
 	public int getUserId() {
@@ -94,11 +94,11 @@ public class User {
 		this.email = email;
 	}
 
-	public Set<Profile> getProfile() {
+	public Profile getProfile() {
 		return profile;
 	}
 
-	public void setProfile(Set<Profile> profile) {
+	public void setProfile(Profile profile) {
 		this.profile = profile;
 	}
 
@@ -118,8 +118,18 @@ public class User {
 		this.userLike = userLike;
 	}
 
+	public User(int userId, String username, String password, String firstName, String lastName, String email) {
+		super();
+		this.userId = userId;
+		this.username = username;
+		this.password = password;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+
 	public User(int userId, String username, String password, String firstName, String lastName, String email,
-			Set<Profile> profile, Set<Comment> userComment, Set<Like> userLike) {
+			Profile profile, Set<Comment> userComment, Set<Like> userLike) {
 		super();
 		this.userId = userId;
 		this.username = username;

@@ -21,7 +21,7 @@ public class Like {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int likeId;
 
-	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "like_like_type_id")
 	private LikeType likeLikeType;
 

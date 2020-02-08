@@ -24,7 +24,7 @@ public class Category {
 	@Column(name = "category")
 	private String category;
 
-	@OneToMany(mappedBy = "postId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "postCategory", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Post> categoryPost;
 
 	public int getCategoryId() {

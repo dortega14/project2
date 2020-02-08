@@ -54,3 +54,452 @@
 2020-02-08 15:26:13 INFO  pooling:129 - HHH10001003: Autocommit mode: false
 2020-02-08 15:26:13 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
 2020-02-08 15:26:15 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 16:51:32 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 16:51:33 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 16:51:34 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 16:51:34 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 16:51:34 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 16:51:34 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 16:51:34 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 16:51:36 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 16:56:08 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 16:56:09 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 16:56:10 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 16:56:10 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 16:56:10 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 16:56:10 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 16:56:10 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 16:56:12 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 16:58:51 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 16:58:52 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 16:58:53 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 16:58:53 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 16:58:53 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 16:58:53 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 16:58:53 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 16:58:55 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:00:10 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:00:11 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:00:12 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:00:12 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:00:12 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:00:12 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:00:12 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:00:13 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:03:55 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:03:56 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:03:56 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:03:56 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:03:56 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:03:56 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:03:56 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:03:58 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:08:45 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:08:46 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:08:47 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:08:47 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:08:47 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:08:47 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:08:47 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:08:49 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:09:54 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:09:55 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:09:56 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:09:56 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:09:56 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:09:56 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:09:56 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:09:57 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:11:58 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:11:59 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:12:00 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:12:00 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:12:00 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:12:00 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:12:00 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:12:02 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:13:08 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:13:09 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:13:10 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:13:10 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:13:10 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:13:10 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:13:10 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:13:13 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:14:01 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:14:02 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:14:02 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:14:02 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:14:02 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:14:02 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:14:02 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:14:04 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:14:12 INFO  Version:21 - HV000001: Hibernate Validator 6.1.0.Final
+2020-02-08 17:14:12 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Comment (class must be instantiated by Interceptor)
+2020-02-08 17:14:12 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Post (class must be instantiated by Interceptor)
+2020-02-08 17:14:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Profile (class must be instantiated by Interceptor)
+2020-02-08 17:14:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.User (class must be instantiated by Interceptor)
+2020-02-08 17:14:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.LikeType (class must be instantiated by Interceptor)
+2020-02-08 17:14:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Category (class must be instantiated by Interceptor)
+2020-02-08 17:14:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Like (class must be instantiated by Interceptor)
+2020-02-08 17:14:13 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f4cd155] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 17:14:13 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.comments drop constraint FK4uuqaqdp01yavqo8kyxp8hs12" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.comments drop constraint FK4uuqaqdp01yavqo8kyxp8hs12" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.comments" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:13 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.comments drop constraint FKp4nvv6gm20q63fcxtevikg1c8" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.comments drop constraint FKp4nvv6gm20q63fcxtevikg1c8" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.comments" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:13 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.likes drop constraint FKanyo1gbndpegqonunf1x6xnwo" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.likes drop constraint FKanyo1gbndpegqonunf1x6xnwo" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.likes" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:13 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.likes drop constraint FKf3rcrh0u4920oy0giaxb5xkmc" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.likes drop constraint FKf3rcrh0u4920oy0giaxb5xkmc" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.likes" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:13 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.likes drop constraint FK4llpk5bovsxirpkhqqhrjt8e3" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.likes drop constraint FK4llpk5bovsxirpkhqqhrjt8e3" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.likes" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:13 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.posts drop constraint FK5sjh4gevys7yfw9nxq51agkbo" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.posts drop constraint FK5sjh4gevys7yfw9nxq51agkbo" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.posts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:14 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.posts drop constraint FK6mu55f9beghlfpojjnttqtiij" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.posts drop constraint FK6mu55f9beghlfpojjnttqtiij" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.posts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:14 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.profile drop constraint FKtb6i1d8kp4xlwgvj0rfswe6km" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.profile drop constraint FKtb6i1d8kp4xlwgvj0rfswe6km" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.profile" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:14 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "alter table public.yt_links drop constraint FKjqv9sy8jt4bw0eqcp7rvvx3x5" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table public.yt_links drop constraint FKjqv9sy8jt4bw0eqcp7rvvx3x5" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at com.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:17)
+	at com.util.HibernateUtil.getSessionFactory(HibernateUtil.java:23)
+	at com.dao.CategoryDao.<init>(CategoryDao.java:18)
+	at com.service.CategoryService.insert(CategoryService.java:9)
+	at com.driver.Driver.main(Driver.java:12)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.yt_links" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "categories" does not exist, skipping
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "comments" does not exist, skipping
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "like_types" does not exist, skipping
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "likes" does not exist, skipping
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "posts" does not exist, skipping
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "profile" does not exist, skipping
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "users" does not exist, skipping
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-08 17:14:14 WARN  SqlExceptionHelper:231 - table "yt_links" does not exist, skipping
+2020-02-08 17:14:14 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6e8a9c30] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 17:14:15 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-08 17:14:15 INFO  Log4j:46 - New user has been created.
+2020-02-08 17:14:16 INFO  Log4j:46 - New user has been created.
+2020-02-08 17:14:16 INFO  Log4j:46 - New user has been created.
+2020-02-08 17:45:31 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:45:32 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:45:32 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:45:32 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:45:32 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:45:32 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:45:32 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:45:34 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:45:41 INFO  Version:21 - HV000001: Hibernate Validator 6.1.0.Final
+2020-02-08 17:45:42 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Comment (class must be instantiated by Interceptor)
+2020-02-08 17:45:42 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Post (class must be instantiated by Interceptor)
+2020-02-08 17:45:42 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Profile (class must be instantiated by Interceptor)
+2020-02-08 17:45:42 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.User (class must be instantiated by Interceptor)
+2020-02-08 17:45:42 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.LikeType (class must be instantiated by Interceptor)
+2020-02-08 17:45:42 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Category (class must be instantiated by Interceptor)
+2020-02-08 17:45:42 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Like (class must be instantiated by Interceptor)
+2020-02-08 17:45:43 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4d178d55] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 17:45:44 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@68c7ef83] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 17:45:45 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-08 17:45:45 INFO  Log4j:40 - New like type has been created.
+2020-02-08 17:45:45 INFO  Log4j:40 - New like type has been created.
+2020-02-08 17:45:45 INFO  Log4j:40 - New like type has been created.
+2020-02-08 17:53:00 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 17:53:01 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 17:53:02 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 17:53:02 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 17:53:02 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 17:53:02 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 17:53:02 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 17:53:03 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 17:53:11 INFO  Version:21 - HV000001: Hibernate Validator 6.1.0.Final
+2020-02-08 17:53:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Comment (class must be instantiated by Interceptor)
+2020-02-08 17:53:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Post (class must be instantiated by Interceptor)
+2020-02-08 17:53:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Profile (class must be instantiated by Interceptor)
+2020-02-08 17:53:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.User (class must be instantiated by Interceptor)
+2020-02-08 17:53:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.LikeType (class must be instantiated by Interceptor)
+2020-02-08 17:53:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Category (class must be instantiated by Interceptor)
+2020-02-08 17:53:13 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Like (class must be instantiated by Interceptor)
+2020-02-08 17:53:13 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14dc3f89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 17:53:14 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@681e144] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 17:53:15 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-08 17:53:15 INFO  Log4j:51 - New user has been created.

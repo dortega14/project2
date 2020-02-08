@@ -7,54 +7,48 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import com.driver.Log4j;
-import com.model.Category;
+import com.model.LikeType;
 import com.util.HibernateUtil;
 
-public class CategoryDao implements DaoContract<Category> {
-
-	
-	
-	public CategoryDao() {
-		HibernateUtil.getSessionFactory().openSession();
-	}
+public class LikeTypeDao implements DaoContract<LikeType> {
 
 	@Override
-	public List<Category> findAll() {
+	public List<LikeType> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Category findById(int id) {
+	public LikeType findById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Category update(Category t) {
+	public LikeType update(LikeType t) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Category insert(Category t) {
+	public LikeType insert(LikeType t) {
 		SessionFactory sesfact = HibernateUtil.getSessionFactory();
 		Session sess = sesfact.openSession();
 		Transaction tx = sess.beginTransaction();
 		sess.save(t);
 		tx.commit();
-		Log4j.log.info("New category has been created.");
+		Log4j.log.info("New like type has been created.");
 		return t;
 	}
 
 	@Override
-	public Category delete(int id) {
+	public LikeType delete(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Category findByName(String name) {
+	public LikeType findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}
