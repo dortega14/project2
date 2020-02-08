@@ -1,9 +1,39 @@
 package com.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "users")
 public class User {
 
+	@Id
+	@Column(name = "user_id")
+//	@OneToMany(mappedBy = "user_id", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int userId;
-	private String username, password, firstName, lastName, email;
+	
+	@Column(name = "username", unique = true)
+	private String username; 
+	
+	@Column(name = "password")
+	private String password; 
+	
+	@Column(name = "first_name")
+	private String firstName; 
+	
+	@Column(name = "last_name")
+	private String lastName; 
+	
+	@Column(name = "email")
+	private String email;
 
 	public int getUserId() {
 		return userId;

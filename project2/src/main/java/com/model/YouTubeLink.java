@@ -1,8 +1,25 @@
 package com.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "yt_links")
 public class YouTubeLink {
 
-	private int YouTubeId, postId;
+	@Id
+	@Column(name = "yt_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int YouTubeId; 
+	
+	
+	private int postId;
+	
+	@Column(name = "link")
 	private String link;
 
 	public int getYouTubeId() {

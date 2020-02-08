@@ -1,8 +1,22 @@
 package com.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "like_types")
 public class LikeTypes {
 
+	@Id
+	@Column(name = "like_type_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int likeTypeId;
+	
+	@Column(name = "like_type")
 	private String likeType;
 
 	public int getLikeTypeId() {

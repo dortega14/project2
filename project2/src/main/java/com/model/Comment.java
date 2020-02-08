@@ -8,35 +8,35 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "likes")
-public class Likes {
+@Table(name = "comments")
+public class Comment {
 
 	@Id
-	@Column(name = "like_id")
+	@Column(name = "comment_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int likeId; 
-	
-	
-	private int likeTypeId; 
-	
-	private int postId; 
-	
+	private int commentId;
+
+	@Column(name = "comment")
+	private String comment;
+
+	private int postId;
+
 	private int userId;
 
-	public int getLikeId() {
-		return likeId;
+	public int getCommentId() {
+		return commentId;
 	}
 
-	public void setLikeId(int likeId) {
-		this.likeId = likeId;
+	public void setCommentId(int commentId) {
+		this.commentId = commentId;
 	}
 
-	public int getLikeTypeId() {
-		return likeTypeId;
+	public String getComment() {
+		return comment;
 	}
 
-	public void setLikeTypeId(int likeTypeId) {
-		this.likeTypeId = likeTypeId;
+	public void setComment(String comment) {
+		this.comment = comment;
 	}
 
 	public int getPostId() {
@@ -55,17 +55,17 @@ public class Likes {
 		this.userId = userId;
 	}
 
-	public Likes(int likeId, int likeTypeId, int postId, int userId) {
+	public Comment(int commentId, String comment, int postId, int userId) {
 		super();
-		this.likeId = likeId;
-		this.likeTypeId = likeTypeId;
+		this.commentId = commentId;
+		this.comment = comment;
 		this.postId = postId;
 		this.userId = userId;
 	}
 
 	@Override
 	public String toString() {
-		return "Likes [likeId=" + likeId + ", likeTypeId=" + likeTypeId + ", postId=" + postId + ", userId=" + userId
+		return "Comment [commentId=" + commentId + ", comment=" + comment + ", postId=" + postId + ", userId=" + userId
 				+ "]";
 	}
 

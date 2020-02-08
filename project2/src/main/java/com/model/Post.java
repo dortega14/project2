@@ -2,11 +2,48 @@ package com.model;
 
 import java.sql.Blob;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "posts")
 public class Post {
 
-	private int postId, category, userId;
-	private String title, ingredients, recipe;
+	@Id
+	@Column(name = "post_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int postId;
+
+	@Column(name = "title")
+	private String title;
+
+	@Column(name = "image")
 	private Blob image;
+
+	@Column(name = "recipe")
+	private String recipe;
+
+	@Column(name = "ingredients")
+	private String ingredients;
+
+	@OneToOne(mappedBy ="category_id", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Categories category;
+
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "user_id")
+	private int userId;
+
+	
+	private int linkId;
 
 	public int getPostId() {
 		return postId;
@@ -16,11 +53,11 @@ public class Post {
 		this.postId = postId;
 	}
 
-	public int getCategory() {
+	public Categories getCategory() {
 		return category;
 	}
 
-	public void setCategory(int category) {
+	public void setCategory(Categories category) {
 		this.category = category;
 	}
 
@@ -64,21 +101,32 @@ public class Post {
 		this.image = image;
 	}
 
-	public Post(int postId, int category, int userId, String title, String ingredients, String recipe, Blob image) {
+	public int getLinkId() {
+		return linkId;
+	}
+
+	public void setLinkId(int linkId) {
+		this.linkId = linkId;
+	}
+
+	public Post(int postId, String title, Blob image, String recipe, String ingredients, Categories category, int userId,
+			int linkId) {
 		super();
 		this.postId = postId;
+		this.title = title;
+		this.image = image;
+		this.recipe = recipe;
+		this.ingredients = ingredients;
 		this.category = category;
 		this.userId = userId;
-		this.title = title;
-		this.ingredients = ingredients;
-		this.recipe = recipe;
-		this.image = image;
+		this.linkId = linkId;
 	}
 
 	@Override
 	public String toString() {
-		return "Post [postId=" + postId + ", category=" + category + ", userId=" + userId + ", title=" + title
-				+ ", ingredients=" + ingredients + ", recipe=" + recipe + ", image=" + image + "]";
+		return "Post [postId=" + postId + ", title=" + title + ", image=" + image + ", recipe=" + recipe
+				+ ", ingredients=" + ingredients + ", category=" + category + ", userId=" + userId + ", linkId="
+				+ linkId + "]";
 	}
 
 }
