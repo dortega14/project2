@@ -1,10 +1,14 @@
 package com.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -19,9 +23,13 @@ public class Comment {
 	@Column(name = "comment")
 	private String comment;
 
-	private int postId;
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "comment_post_id")
+	private Post commentPost;
 
-	private int userId;
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "comment_user_id")
+	private User commentUser;
 
 	public int getCommentId() {
 		return commentId;
@@ -39,34 +47,34 @@ public class Comment {
 		this.comment = comment;
 	}
 
-	public int getPostId() {
-		return postId;
+	public Post getCommentPost() {
+		return commentPost;
 	}
 
-	public void setPostId(int postId) {
-		this.postId = postId;
+	public void setCommentPost(Post commentPost) {
+		this.commentPost = commentPost;
 	}
 
-	public int getUserId() {
-		return userId;
+	public User getCommentUser() {
+		return commentUser;
 	}
 
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setCommentUser(User commentUser) {
+		this.commentUser = commentUser;
 	}
 
-	public Comment(int commentId, String comment, int postId, int userId) {
+	public Comment(int commentId, String comment, Post commentPost, User commentUser) {
 		super();
 		this.commentId = commentId;
 		this.comment = comment;
-		this.postId = postId;
-		this.userId = userId;
+		this.commentPost = commentPost;
+		this.commentUser = commentUser;
 	}
 
 	@Override
 	public String toString() {
-		return "Comment [commentId=" + commentId + ", comment=" + comment + ", postId=" + postId + ", userId=" + userId
-				+ "]";
+		return "Comment [commentId=" + commentId + ", comment=" + comment + ", commentPost=" + commentPost
+				+ ", commentUser=" + commentUser + "]";
 	}
 
 }

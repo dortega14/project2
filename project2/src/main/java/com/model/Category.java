@@ -2,24 +2,30 @@ package com.model;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "categories")
-public class Categories {
+public class Category {
 
 	@Id
 	@Column(name = "category_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int categoryId;
-	
+
 	@Column(name = "category")
-	private Set<Post> category;
+	private String category;
+
+	@OneToMany(mappedBy = "postId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Post> categoryPost;
 
 	public int getCategoryId() {
 		return categoryId;
@@ -37,15 +43,30 @@ public class Categories {
 		this.category = category;
 	}
 
-	public Categories(int categoryId, String category) {
+	public Set<Post> getCategoryPost() {
+		return categoryPost;
+	}
+
+	public void setCategoryPost(Set<Post> categoryPost) {
+		this.categoryPost = categoryPost;
+	}
+
+	public Category(int categoryId, String category) {
 		super();
 		this.categoryId = categoryId;
 		this.category = category;
 	}
 
+	public Category(int categoryId, String category, Set<Post> categoryPost) {
+		super();
+		this.categoryId = categoryId;
+		this.category = category;
+		this.categoryPost = categoryPost;
+	}
+
 	@Override
 	public String toString() {
-		return "Categories [categoryId=" + categoryId + ", category=" + category + "]";
+		return "Category [categoryId=" + categoryId + ", category=" + category + ", categoryPost=" + categoryPost + "]";
 	}
 
 }

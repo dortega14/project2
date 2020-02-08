@@ -1,6 +1,7 @@
 package com.model;
 
 import java.sql.Blob;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -11,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -35,15 +37,22 @@ public class Post {
 	@Column(name = "ingredients")
 	private String ingredients;
 
-	@OneToOne(mappedBy ="category_id", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private Categories category;
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "category_post_id")
+	private Category postCategory;
 
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinColumn(name = "user_id")
-	private int userId;
+	@JoinColumn(name = "post_user_id")
+	private User postUser;
 
-	
-	private int linkId;
+	@OneToOne(mappedBy = "youtTubeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<YouTubeLink> postYtLink;
+
+	@OneToMany(mappedBy = "commentId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Comment> postComment;
+
+	@OneToMany(mappedBy = "likeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Like> postLike;
 
 	public int getPostId() {
 		return postId;
@@ -51,22 +60,6 @@ public class Post {
 
 	public void setPostId(int postId) {
 		this.postId = postId;
-	}
-
-	public Categories getCategory() {
-		return category;
-	}
-
-	public void setCategory(Categories category) {
-		this.category = category;
-	}
-
-	public int getUserId() {
-		return userId;
-	}
-
-	public void setUserId(int userId) {
-		this.userId = userId;
 	}
 
 	public String getTitle() {
@@ -77,12 +70,12 @@ public class Post {
 		this.title = title;
 	}
 
-	public String getIngredients() {
-		return ingredients;
+	public Blob getImage() {
+		return image;
 	}
 
-	public void setIngredients(String ingredients) {
-		this.ingredients = ingredients;
+	public void setImage(Blob image) {
+		this.image = image;
 	}
 
 	public String getRecipe() {
@@ -93,40 +86,74 @@ public class Post {
 		this.recipe = recipe;
 	}
 
-	public Blob getImage() {
-		return image;
+	public String getIngredients() {
+		return ingredients;
 	}
 
-	public void setImage(Blob image) {
-		this.image = image;
+	public void setIngredients(String ingredients) {
+		this.ingredients = ingredients;
 	}
 
-	public int getLinkId() {
-		return linkId;
+	public Category getPostCategory() {
+		return postCategory;
 	}
 
-	public void setLinkId(int linkId) {
-		this.linkId = linkId;
+	public void setPostCategory(Category postCategory) {
+		this.postCategory = postCategory;
 	}
 
-	public Post(int postId, String title, Blob image, String recipe, String ingredients, Categories category, int userId,
-			int linkId) {
+	public User getPostUser() {
+		return postUser;
+	}
+
+	public void setPostUser(User postUser) {
+		this.postUser = postUser;
+	}
+
+	public Set<YouTubeLink> getPostYtLink() {
+		return postYtLink;
+	}
+
+	public void setPostYtLink(Set<YouTubeLink> postYtLink) {
+		this.postYtLink = postYtLink;
+	}
+
+	public Set<Comment> getPostComment() {
+		return postComment;
+	}
+
+	public void setPostComment(Set<Comment> postComment) {
+		this.postComment = postComment;
+	}
+
+	public Set<Like> getPostLike() {
+		return postLike;
+	}
+
+	public void setPostLike(Set<Like> postLike) {
+		this.postLike = postLike;
+	}
+
+	public Post(int postId, String title, Blob image, String recipe, String ingredients, Category postCategory,
+			User postUser, Set<YouTubeLink> postYtLink, Set<Comment> postComment, Set<Like> postLike) {
 		super();
 		this.postId = postId;
 		this.title = title;
 		this.image = image;
 		this.recipe = recipe;
 		this.ingredients = ingredients;
-		this.category = category;
-		this.userId = userId;
-		this.linkId = linkId;
+		this.postCategory = postCategory;
+		this.postUser = postUser;
+		this.postYtLink = postYtLink;
+		this.postComment = postComment;
+		this.postLike = postLike;
 	}
 
 	@Override
 	public String toString() {
 		return "Post [postId=" + postId + ", title=" + title + ", image=" + image + ", recipe=" + recipe
-				+ ", ingredients=" + ingredients + ", category=" + category + ", userId=" + userId + ", linkId="
-				+ linkId + "]";
+				+ ", ingredients=" + ingredients + ", postCategory=" + postCategory + ", postUser=" + postUser
+				+ ", postYtLink=" + postYtLink + ", postComment=" + postComment + ", postLike=" + postLike + "]";
 	}
 
 }

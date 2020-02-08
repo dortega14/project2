@@ -1,23 +1,31 @@
 package com.model;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "like_types")
-public class LikeTypes {
+public class LikeType {
 
 	@Id
 	@Column(name = "like_type_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int likeTypeId;
-	
+
 	@Column(name = "like_type")
 	private String likeType;
+
+	@OneToOne(mappedBy = "likeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Like> likeTypeLike;
 
 	public int getLikeTypeId() {
 		return likeTypeId;
@@ -35,15 +43,24 @@ public class LikeTypes {
 		this.likeType = likeType;
 	}
 
-	public LikeTypes(int likeTypeId, String likeType) {
+	public Set<Like> getLikeTypeLike() {
+		return likeTypeLike;
+	}
+
+	public void setLikeTypeLike(Set<Like> likeTypeLike) {
+		this.likeTypeLike = likeTypeLike;
+	}
+
+	public LikeType(int likeTypeId, String likeType, Set<Like> likeTypeLike) {
 		super();
 		this.likeTypeId = likeTypeId;
 		this.likeType = likeType;
+		this.likeTypeLike = likeTypeLike;
 	}
 
 	@Override
 	public String toString() {
-		return "LikeTypes [likeTypeId=" + likeTypeId + ", likeType=" + likeType + "]";
+		return "LikeType [likeTypeId=" + likeTypeId + ", likeType=" + likeType + ", likeTypeLike=" + likeTypeLike + "]";
 	}
 
 }

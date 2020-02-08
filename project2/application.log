@@ -1,0 +1,56 @@
+2020-02-08 15:07:21 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 15:07:22 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 15:07:23 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 15:07:23 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 15:07:23 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 15:07:23 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 15:07:23 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 15:07:25 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 15:08:24 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 15:08:25 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 15:08:26 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 15:08:26 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 15:08:26 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 15:08:26 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 15:08:26 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 15:08:28 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 15:11:48 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 15:11:49 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 15:11:49 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 15:11:49 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 15:11:49 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 15:11:49 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 15:11:49 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 15:11:51 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 15:15:54 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 15:15:55 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 15:15:56 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 15:15:56 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 15:15:56 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 15:15:56 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 15:15:56 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 15:15:58 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 15:17:44 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 15:17:45 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 15:17:45 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 15:17:45 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 15:17:45 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 15:17:45 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 15:17:45 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 15:17:47 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 15:21:32 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 15:21:33 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 15:21:34 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 15:21:34 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 15:21:34 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 15:21:34 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 15:21:34 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 15:21:36 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 15:26:11 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 15:26:12 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 15:26:13 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 15:26:13 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 15:26:13 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 15:26:13 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 15:26:13 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 15:26:15 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect

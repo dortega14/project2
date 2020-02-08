@@ -19,7 +19,14 @@
 		<property name="hibernate.connection.format_sql">true</property>
 		<property name="hibernate.connection.pool_size">10</property>
 		<property name="hibernate.hbm2ddl.auto">create</property>
-		<mapping resource="hibernate.hbm.xml"/>
+		<mapping class="com.model.Category"/>
+		<mapping class="com.model.Comment"/>
+		<mapping class="com.model.Like"/>
+		<mapping class="com.model.LikeType"/>
+		<mapping class="com.model.Post"/>
+		<mapping class="com.model.Profile"/>
+		<mapping class="com.model.User"/>
+		<mapping class="com.model.YouTubeLink"/>
 	</session-factory>
 
 </hibernate-configuration>

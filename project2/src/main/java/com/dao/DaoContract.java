@@ -3,18 +3,17 @@ package com.dao;
 import java.util.List;
 
 public interface DaoContract<T> {
-	
-		//create
-		int insert(T t);
-		
-		//read
-		List<T> readAll();
-		
-		//update
-		int update(T t);
-		
-		//delete
-		int delete(T t);
-		
+
+	List<T> findAll();
+
+	T findById(int id);
+
+	T update(T t);
+
+	T insert(T t);
+
+	T delete(int id);
+
+	T findByName(String name);
 
 }

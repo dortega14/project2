@@ -1,10 +1,14 @@
 package com.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,28 +18,21 @@ public class YouTubeLink {
 	@Id
 	@Column(name = "yt_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int YouTubeId; 
-	
-	
-	private int postId;
-	
+	private int youTubeId;
+
 	@Column(name = "link")
 	private String link;
 
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "yt_post_id")
+	private Post post;
+
 	public int getYouTubeId() {
-		return YouTubeId;
+		return youTubeId;
 	}
 
 	public void setYouTubeId(int youTubeId) {
-		YouTubeId = youTubeId;
-	}
-
-	public int getPostId() {
-		return postId;
-	}
-
-	public void setPostId(int postId) {
-		this.postId = postId;
+		this.youTubeId = youTubeId;
 	}
 
 	public String getLink() {
@@ -46,16 +43,12 @@ public class YouTubeLink {
 		this.link = link;
 	}
 
-	public YouTubeLink(int youTubeId, int postId, String link) {
-		super();
-		YouTubeId = youTubeId;
-		this.postId = postId;
-		this.link = link;
+	public Post getPost() {
+		return post;
 	}
 
-	@Override
-	public String toString() {
-		return "YouTubeLink [YouTubeId=" + YouTubeId + ", postId=" + postId + ", link=" + link + "]";
+	public void setPost(Post post) {
+		this.post = post;
 	}
 
 }

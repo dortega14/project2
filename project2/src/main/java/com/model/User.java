@@ -1,5 +1,7 @@
 package com.model;
 
+import java.util.Set;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -16,7 +19,6 @@ public class User {
 
 	@Id
 	@Column(name = "user_id")
-//	@OneToMany(mappedBy = "user_id", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int userId;
 	
@@ -34,6 +36,15 @@ public class User {
 	
 	@Column(name = "email")
 	private String email;
+	
+	@OneToOne(mappedBy = "profileId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Profile> profile;
+
+	@OneToMany(mappedBy = "commentId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Comment> userComment;
+	
+	@OneToMany(mappedBy = "likeId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Like> userLike;
 
 	public int getUserId() {
 		return userId;
@@ -83,18 +94,32 @@ public class User {
 		this.email = email;
 	}
 
-	public User(String username, String password) {
-		super();
-		this.username = username;
-		this.password = password;
+	public Set<Profile> getProfile() {
+		return profile;
 	}
 
-	public User(String username) {
-		super();
-		this.username = username;
+	public void setProfile(Set<Profile> profile) {
+		this.profile = profile;
 	}
 
-	public User(int userId, String username, String password, String firstName, String lastName, String email) {
+	public Set<Comment> getUserComment() {
+		return userComment;
+	}
+
+	public void setUserComment(Set<Comment> userComment) {
+		this.userComment = userComment;
+	}
+
+	public Set<Like> getUserLike() {
+		return userLike;
+	}
+
+	public void setUserLike(Set<Like> userLike) {
+		this.userLike = userLike;
+	}
+
+	public User(int userId, String username, String password, String firstName, String lastName, String email,
+			Set<Profile> profile, Set<Comment> userComment, Set<Like> userLike) {
 		super();
 		this.userId = userId;
 		this.username = username;
@@ -102,12 +127,17 @@ public class User {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.profile = profile;
+		this.userComment = userComment;
+		this.userLike = userLike;
 	}
 
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", username=" + username + ", password=" + password + ", firstName="
-				+ firstName + ", lastName=" + lastName + ", email=" + email + "]";
+				+ firstName + ", lastName=" + lastName + ", email=" + email + ", profile=" + profile + ", userComment="
+				+ userComment + ", userLike=" + userLike + "]";
 	}
-
+	
+	
 }
