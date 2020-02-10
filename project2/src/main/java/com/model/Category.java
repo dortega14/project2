@@ -56,7 +56,7 @@ public class Category {
 		this.categoryId = categoryId;
 		this.category = category;
 	}
-
+	
 	public Category(int categoryId, String category, Set<Post> categoryPost) {
 		super();
 		this.categoryId = categoryId;

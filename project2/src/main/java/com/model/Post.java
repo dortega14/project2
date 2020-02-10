@@ -1,6 +1,7 @@
 package com.model;
 
 import java.sql.Blob;
+import java.sql.Timestamp;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -13,8 +14,9 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 @Table(name = "posts")
@@ -27,6 +29,10 @@ public class Post {
 
 	@Column(name = "title")
 	private String title;
+
+	@Column(name = "submitted")
+	@ColumnDefault("now")
+	private Timestamp postSubmitted;
 
 	@Column(name = "image")
 	private Blob image;
@@ -68,6 +74,14 @@ public class Post {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public Timestamp getPostSubmitted() {
+		return postSubmitted;
+	}
+
+	public void setPostSubmitted(Timestamp postSubmitted) {
+		this.postSubmitted = postSubmitted;
 	}
 
 	public Blob getImage() {
@@ -132,6 +146,19 @@ public class Post {
 
 	public void setPostLike(Set<Like> postLike) {
 		this.postLike = postLike;
+	}
+	
+	public Post(int postId, String title, Timestamp postSubmitted, Blob image, String recipe, String ingredients,
+			Category postCategory, User postUser) {
+		super();
+		this.postId = postId;
+		this.title = title;
+		this.postSubmitted = postSubmitted;
+		this.image = image;
+		this.recipe = recipe;
+		this.ingredients = ingredients;
+		this.postCategory = postCategory;
+		this.postUser = postUser;
 	}
 
 	public Post(int postId, String title, Blob image, String recipe, String ingredients, Category postCategory,

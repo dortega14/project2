@@ -8,49 +8,49 @@ import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
 
 import com.driver.Log4j;
-import com.model.LikeType;
+import com.model.Post;
 import com.util.HibernateUtil;
 
 @Repository
-public class LikeTypeDao implements DaoContract<LikeType> {
+public class PostDao implements DaoContract<Post> {
 
 	@Override
-	public List<LikeType> findAll() {
+	public List<Post> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public LikeType findById(int id) {
+	public Post findById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public LikeType update(LikeType t) {
+	public Post update(Post t) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public LikeType insert(LikeType t) {
+	public Post insert(Post t) {
 		SessionFactory sesfact = HibernateUtil.getSessionFactory();
 		Session sess = sesfact.openSession();
 		Transaction tx = sess.beginTransaction();
 		sess.save(t);
 		tx.commit();
-		Log4j.log.info("New like type has been created.");
+		Log4j.log.info("New post has been created.");
 		return t;
 	}
 
 	@Override
-	public LikeType delete(int id) {
+	public Post delete(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public LikeType findByName(String name) {
+	public Post findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}

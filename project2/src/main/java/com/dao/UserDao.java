@@ -5,11 +5,13 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Repository;
 
 import com.driver.Log4j;
 import com.model.User;
 import com.util.HibernateUtil;
 
+@Repository
 public class UserDao implements DaoContract<User> {
 	
 	public UserDao() {

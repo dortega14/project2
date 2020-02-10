@@ -503,3 +503,43 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.yt_links" 
 2020-02-08 17:53:14 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@681e144] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2020-02-08 17:53:15 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2020-02-08 17:53:15 INFO  Log4j:51 - New user has been created.
+2020-02-08 20:40:14 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-08 20:40:15 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-08 20:40:16 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-08 20:40:16 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-08 20:40:16 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-08 20:40:16 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-08 20:40:16 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-08 20:40:18 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-08 20:40:26 INFO  Version:21 - HV000001: Hibernate Validator 6.1.0.Final
+2020-02-08 20:40:27 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Comment (class must be instantiated by Interceptor)
+2020-02-08 20:40:27 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Post (class must be instantiated by Interceptor)
+2020-02-08 20:40:27 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Profile (class must be instantiated by Interceptor)
+2020-02-08 20:40:27 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.User (class must be instantiated by Interceptor)
+2020-02-08 20:40:27 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.LikeType (class must be instantiated by Interceptor)
+2020-02-08 20:40:27 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Category (class must be instantiated by Interceptor)
+2020-02-08 20:40:27 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Like (class must be instantiated by Interceptor)
+2020-02-08 20:40:28 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14dc3f89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 20:40:29 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@681e144] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-08 20:40:30 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-08 20:40:30 INFO  Log4j:40 - New category has been created.
+2020-02-10 14:02:06 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-10 14:02:08 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-10 14:02:09 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-10 14:02:09 INFO  pooling:115 - HHH10001005: using driver [null] at URL [jdbc:postgresql://palkrom-db.cqdncewen1wb.us-east-2.rds.amazonaws.com:5432/proj2]
+2020-02-10 14:02:09 INFO  pooling:124 - HHH10001001: Connection properties: {user=jdbc_user, password=****, format_sql=true, show_sql=true, driver.class=org.postgresql.Driver}
+2020-02-10 14:02:09 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2020-02-10 14:02:09 INFO  DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 10 (min=1)
+2020-02-10 14:02:12 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-10 14:02:21 INFO  Version:21 - HV000001: Hibernate Validator 6.1.0.Final
+2020-02-10 14:02:22 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Comment (class must be instantiated by Interceptor)
+2020-02-10 14:02:22 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Post (class must be instantiated by Interceptor)
+2020-02-10 14:02:22 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Profile (class must be instantiated by Interceptor)
+2020-02-10 14:02:22 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.User (class must be instantiated by Interceptor)
+2020-02-10 14:02:22 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.LikeType (class must be instantiated by Interceptor)
+2020-02-10 14:02:22 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Category (class must be instantiated by Interceptor)
+2020-02-10 14:02:22 INFO  PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.model.Like (class must be instantiated by Interceptor)
+2020-02-10 14:02:23 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7f92b990] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-10 14:02:24 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b46dd8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-10 14:02:25 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-10 14:02:25 INFO  Log4j:51 - New user has been created.
