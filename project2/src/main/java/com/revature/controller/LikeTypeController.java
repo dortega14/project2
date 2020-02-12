@@ -1,0 +1,52 @@
+package com.revature.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.revature.model.LikeType;
+import com.revature.service.LikeTypeService;
+
+@Controller
+public class LikeTypeController {
+	
+	private LikeTypeService lts;
+
+	@Autowired
+	public void setLts(LikeTypeService lts) {
+		this.lts = lts;
+	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+	public ResponseEntity<List<LikeType>> readAllCaegories(){
+		return new ResponseEntity<>(lts.readAll(), HttpStatus.ACCEPTED);
+	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+	public ResponseEntity<LikeType> findCategoryById(int id){
+		return new ResponseEntity<>(lts.findById(id), HttpStatus.ACCEPTED);
+	}
+	
+	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+	public ResponseEntity<LikeType> updateCategory(@RequestBody LikeType lt){
+		return new ResponseEntity<>(lts.update(lt), HttpStatus.ACCEPTED);
+	}
+	
+	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+	public ResponseEntity<LikeType> insertNewCategory(@RequestBody LikeType lt){
+		return new ResponseEntity<>(lts.insert(lt), HttpStatus.ACCEPTED);
+	}
+	
+	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+	public ResponseEntity<LikeType> deleteCategory(@RequestBody int id){
+		lts.delete(id);
+		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+	}
+
+}
