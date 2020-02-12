@@ -1,0 +1,55 @@
+import React from 'react';
+import '../../css/Main.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import {Redirect, Route, NavLink} from 'react-router-dom';
+import { render } from '@testing-library/react';
+
+
+function Login(){
+    return(
+        <div >
+        <header className="MainButtons">
+            <nav >
+                <ul className="LinkElements">
+                    <li>< NavLink className="mainLink" to={{
+                        pathname: '/main'
+                    }}>Home</ NavLink></li>
+                <li><NavLink className="mainLink" to={{
+                        pathname: '/register'
+                    }}>Register</NavLink></li>
+                </ul>
+            </nav>
+        </header>
+        <div className="container">
+          
+            <form id ="LoginForm" className="form-horizontal">   
+                <div id="LoginElements" className="row">
+                <div className="TextForLogin">
+                    <p>Share your favorite recipies </p>
+                    <p>with friends and family</p>
+                </div>
+                    <div className="form-group col-md-4">
+                        <label id="EmailInput" htmlFor="exampleInputEmail1">Email address </label>
+                        <input type="email" className="form-control input-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <small id="emailHelp" className="form-text text-muted"></small>
+                    </div>
+                    <div className="form-group col-md-4">
+                        <label htmlFor="exampleInputPassword1">Password</label>
+                        <input type="password"className="form-control input-lg" id="exampleInputPassword1" placeholder="Password" />
+                        <button onClick={toProfileP} id="SubmitButton" type="submit" className="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+
+    );
+}
+
+
+function toProfileP (){
+ 
+}
+
+
+export default Login;
