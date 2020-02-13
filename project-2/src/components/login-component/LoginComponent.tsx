@@ -3,6 +3,7 @@ import '../../css/Main.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import {Redirect, Route, NavLink} from 'react-router-dom';
 import { render } from '@testing-library/react';
+import { authenticateUser } from '../../utilities/api';
 
 
 function Login(){
@@ -22,7 +23,7 @@ function Login(){
         </header>
         <div className="container">
           
-            <form id ="LoginForm" className="form-horizontal">   
+            <form id ="LoginForm" className="form-horizontal" onSubmit={()=>authenticateUser}>   
                 <div id="LoginElements" className="row">
                 <div className="TextForLogin">
                     <p>Share your favorite recipies </p>

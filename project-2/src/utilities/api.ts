@@ -1,4 +1,4 @@
-import { axiosConfig } from "./axiosConfig";
+import  axiosConfig  from "./axiosConfig";
 import { IPost } from "../model/IPost";
 import IUser from "../model/IUser";
 import { ILike } from "../model/ILike";
