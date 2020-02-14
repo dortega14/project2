@@ -42,7 +42,7 @@ public class PostService {
 		return pd.update(post);
 	}
 	
-	public void delete(int id) {
-		pd.delete(id);
+	public void delete(Post post) {
+		pd.delete(post);
 	}
 }

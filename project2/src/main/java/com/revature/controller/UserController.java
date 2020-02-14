@@ -16,36 +16,41 @@ import com.revature.service.UserService;
 @Controller
 public class UserController {
 
+	@Autowired
 	private UserService us;
 
-	@Autowired
 	public void setUs(UserService us) {
 		this.us = us;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<List<User>> readAllCaegories(){
+	@RequestMapping(method = RequestMethod.GET, value = "/list.app", produces = "application/json")
+	public ResponseEntity<List<User>> readAllUsers(){
 		return new ResponseEntity<>(us.readAll(), HttpStatus.ACCEPTED);
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<User> findCategoryById(int id){
+	public ResponseEntity<User> findUserById(int id){
 		return new ResponseEntity<>(us.findById(id), HttpStatus.ACCEPTED);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<User> updateCategory(@RequestBody User user){
+	public ResponseEntity<User> updateUser(@RequestBody User user){
 		return new ResponseEntity<>(us.update(user), HttpStatus.ACCEPTED);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<User> insertNewCategory(@RequestBody User user){
+	public ResponseEntity<User> insertNewUser(@RequestBody User user){
 		return new ResponseEntity<>(us.insert(user), HttpStatus.ACCEPTED);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<User> deleteCategory(@RequestBody int id){
-		us.delete(id);
+	public ResponseEntity<User> deleteUser(@RequestBody User user){
+		us.delete(user);
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+	public ResponseEntity<User> findUserByUsername(String name) {
+		return new ResponseEntity<>(us.findByUsername(name), HttpStatus.ACCEPTED);
 	}
 }

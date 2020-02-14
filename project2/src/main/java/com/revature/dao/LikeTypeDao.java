@@ -11,7 +11,7 @@ import com.revature.model.LikeType;
 
 @Repository
 @Transactional
-public class LikeTypeDao implements DaoContract<LikeType> {
+public class LikeTypeDao {
 
 	private SessionFactory sesfact;
 	
@@ -21,34 +21,28 @@ public class LikeTypeDao implements DaoContract<LikeType> {
 		this.sesfact = sesfact;
 	}
 	
-	@Override
 	public List<LikeType> findAll() {
-		return sesfact.openSession().createQuery("from like_types", LikeType.class).list();
+		return sesfact.getCurrentSession().createQuery("from like_types", LikeType.class).list();
 	}
 
-	@Override
 	public LikeType findById(int id) {
-		return sesfact.openSession().get(LikeType.class, id);
+		return sesfact.getCurrentSession().get(LikeType.class, id);
 	}
 
-	@Override
 	public LikeType update(LikeType t) {
-		sesfact.openSession().update(t);
+		sesfact.getCurrentSession().update(t);
 		return t;
 	}
 
-	@Override
 	public LikeType insert(LikeType t) {
-		sesfact.openSession().save(t);
+		sesfact.getCurrentSession().save(t);
 		return t;
 	}
 
-	@Override
-	public void delete(int id) {
-		
+	public void delete(LikeType t) {
+		sesfact.getCurrentSession().delete(t);
 	}
 
-	@Override
 	public LikeType findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;

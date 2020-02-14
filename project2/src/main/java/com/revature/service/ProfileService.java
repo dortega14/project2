@@ -43,8 +43,8 @@ public class ProfileService {
 		return pd.insert(prof);
 	}
 	
-	public void delete(int id) {
-		pd.delete(id);
+	public void delete(Profile prof) {
+		pd.delete(prof);
 	}
 
 }

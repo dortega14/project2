@@ -43,8 +43,8 @@ public class YouTubeLinkService {
 		return ytld.insert(ytl);
 	}
 	
-	public void delete(int id) {
-		ytld.delete(id);
+	public void delete(YouTubeLink ytl) {
+		ytld.delete(ytl);
 	}
 
 }

@@ -11,7 +11,7 @@ import com.revature.model.User;
 
 @Repository
 @Transactional
-public class UserDao implements DaoContract<User> {
+public class UserDao {
 	
 	private SessionFactory sesfact;
 	
@@ -21,36 +21,30 @@ public class UserDao implements DaoContract<User> {
 		this.sesfact = sesfact;
 	}
 
-	@Override
 	public List<User> findAll() {
-		return sesfact.openSession().createQuery("from users", User.class).list();
+		return sesfact.getCurrentSession().createQuery("from users", User.class).list();
 	}
 
-	@Override
 	public User findById(int id) {
-		return sesfact.openSession().get(User.class, id);
+		return sesfact.getCurrentSession().get(User.class, id);
 	}
 
-	@Override
 	public User update(User t) {
-		sesfact.openSession().update(t);
+		sesfact.getCurrentSession().update(t);
 		return t;
 	}
 
-	@Override
 	public User insert(User t) {
-		sesfact.openSession().save(t);
+		sesfact.getCurrentSession().save(t);
 		return t;
 	}
 
-	@Override
-	public void delete(int id) {
-		
+	public void delete(User t) {
+		sesfact.getCurrentSession().delete(t);
 	}
 
-	@Override
 	public User findByName(String name) {
-		return sesfact.openSession().createQuery("from users where usernname = '" + name + "'", User.class).list().get(0);
+		return sesfact.getCurrentSession().createQuery("from users where usernname = '" + name + "'", User.class).list().get(0);
 	}
 
 	

@@ -11,7 +11,7 @@ import com.revature.model.Profile;
 
 @Repository
 @Transactional
-public class ProfileDao implements DaoContract<Profile> {
+public class ProfileDao {
 
 	private SessionFactory sesfact;
 	
@@ -21,34 +21,28 @@ public class ProfileDao implements DaoContract<Profile> {
 		this.sesfact = sesfact;
 	}
 	
-	@Override
 	public List<Profile> findAll() {
-		return sesfact.openSession().createQuery("from profile", Profile.class).list();
+		return sesfact.getCurrentSession().createQuery("from profile", Profile.class).list();
 	}
 
-	@Override
 	public Profile findById(int id) {
-		return sesfact.openSession().get(Profile.class, id);
+		return sesfact.getCurrentSession().get(Profile.class, id);
 	}
 
-	@Override
 	public Profile update(Profile t) {
-		sesfact.openSession().update(t);
+		sesfact.getCurrentSession().update(t);
 		return t;
 	}
 
-	@Override
 	public Profile insert(Profile t) {
-		sesfact.openSession().save(t);
+		sesfact.getCurrentSession().save(t);
 		return t;
 	}
 
-	@Override
-	public void delete(int id) {
-		
+	public void delete(Profile t) {
+		sesfact.getCurrentSession().delete(t);
 	}
 
-	@Override
 	public Profile findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;

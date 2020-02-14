@@ -20,8 +20,11 @@ public class YouTubeLink {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int youTubeId;
 
-	@Column(name = "link")
-	private String link;
+	@Column(name = "video_id")
+	private String videoId;
+
+	@Column(name = "start_time")
+	private int startTime;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "yt_post_id")
@@ -35,12 +38,20 @@ public class YouTubeLink {
 		this.youTubeId = youTubeId;
 	}
 
-	public String getLink() {
-		return link;
+	public String getVideoId() {
+		return videoId;
 	}
 
-	public void setLink(String link) {
-		this.link = link;
+	public void setVideoId(String videoId) {
+		this.videoId = videoId;
+	}
+
+	public int getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(int startTime) {
+		this.startTime = startTime;
 	}
 
 	public Post getPost() {
@@ -56,24 +67,16 @@ public class YouTubeLink {
 		// TODO Auto-generated constructor stub
 	}
 
-	public YouTubeLink(int youTubeId, String link) {
+	public YouTubeLink(int youTubeId, String videoId, int startTime) {
 		super();
 		this.youTubeId = youTubeId;
-		this.link = link;
-	}
-
-	public YouTubeLink(int youTubeId, String link, Post ytPost) {
-		super();
-		this.youTubeId = youTubeId;
-		this.link = link;
-		this.ytPost = ytPost;
+		this.videoId = videoId;
+		this.startTime = startTime;
 	}
 
 	@Override
 	public String toString() {
-		return "YouTubeLink [youTubeId=" + youTubeId + ", link=" + link + "]";
+		return "YouTubeLink [youTubeId=" + youTubeId + ", videoId=" + videoId + ", startTime=" + startTime + "]";
 	}
-	
-	
 
 }

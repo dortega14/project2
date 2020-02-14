@@ -11,7 +11,7 @@ import com.revature.model.Category;
 
 @Repository
 @Transactional
-public class CategoryDao implements DaoContract<Category> {
+public class CategoryDao {
 
 	private SessionFactory sesfact;
 	
@@ -21,34 +21,28 @@ public class CategoryDao implements DaoContract<Category> {
 		this.sesfact = sesfact;
 	}
 
-	@Override
 	public List<Category> findAll() {
-		return sesfact.openSession().createQuery("from categories", Category.class).list();
+		return sesfact.getCurrentSession().createQuery("from categories", Category.class).list();
 	}
 
-	@Override
 	public Category findById(int id) {
-		return sesfact.openSession().get(Category.class, id);
+		return sesfact.getCurrentSession().get(Category.class, id);
 	}
 
-	@Override
 	public Category update(Category t) {
-		sesfact.openSession().update(t);
+		sesfact.getCurrentSession().update(t);
 		return t;
 	}
 
-	@Override
 	public Category insert(Category t) {
-		sesfact.openSession().save(t);
+		sesfact.getCurrentSession().save(t);
 		return t;
 	}
 
-	@Override
-	public void delete(int id) {
-		
+	public void delete(Category t) {
+		sesfact.getCurrentSession().delete(t);
 	}
 
-	@Override
 	public Category findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;

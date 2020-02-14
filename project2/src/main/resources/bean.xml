@@ -15,7 +15,7 @@
 	 ">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.revature." />
+	<context:component-scan base-package="com.revature" />
 	<aspect:aspectj-autoproxy />
 	<tx:annotation-driven />
 

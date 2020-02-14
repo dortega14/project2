@@ -43,8 +43,8 @@ public class CommentService {
 		return cd.insert(comment);
 	}
 	
-	public void delete(int id) {
-		cd.delete(id);
+	public void delete(Comment comment) {
+		cd.delete(comment);
 	}
 
 }

@@ -24,7 +24,7 @@ public class CategoryController {
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<List<Category>> readAllCaegories(){
+	public ResponseEntity<List<Category>> readAllCategories(){
 		return new ResponseEntity<>(cs.readAll(), HttpStatus.ACCEPTED);
 	}
 	
@@ -44,8 +44,8 @@ public class CategoryController {
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Category> deleteCategory(@RequestBody int id){
-		cs.delete(id);
+	public ResponseEntity<Category> deleteCategory(@RequestBody Category cat){
+		cs.delete(cat);
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
 	}
 

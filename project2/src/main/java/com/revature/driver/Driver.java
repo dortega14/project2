@@ -17,6 +17,9 @@ public class Driver {
 	public static ApplicationContext ac = new ClassPathXmlApplicationContext("Bean.xml");
 	
 	static UserService us = ac.getBean(UserService.class);
+	static LikeTypeService lts = ac.getBean(LikeTypeService.class);
+	static CategoryService cs = ac.getBean(CategoryService.class);
+	static PostService ps = ac.getBean(PostService.class);
 
 	public static void main(String[] args) {
 //		initializeCategory();
@@ -28,29 +31,24 @@ public class Driver {
 	}
 
 	private static void initializeCategory() {
-		CategoryService cs = new CategoryService();
 		cs.insert(new Category(0, "Breakfast"));
 		cs.insert(new Category(0, "Lunch"));
 		cs.insert(new Category(0, "Dinner"));
 	}
 
 	private static void initializeLikeType() {
-		LikeTypeService lts = new LikeTypeService();
 		lts.insert(new LikeType(0, "Tasty"));
 		lts.insert(new LikeType(0, "Looks good"));
 		lts.insert(new LikeType(0, "Needs salt"));
 	}
 
 	private static void initializeUser() {
-//		UserService us = new UserService();
-//		us.insert(new User(0, "dave14", "gonoles", "David", "Ortega", "dave.ort14@gmail.com"));
+		us.insert(new User(0, "dave14", "gonoles", "David", "Ortega", "dave.ort14@gmail.com"));
 		us.insert(new User(0, "condog", "iamconnor", "Connor", "Casey", "connorcaseyc@gmail.com"));
+		us.insert(new User(0, "palkrom", "Bigchungus492", "Kyle", "Welch", "palkia.welch@gmail.com"));
 	}
 
 	private static void initializePost() {
-		PostService ps = new PostService();
-		CategoryService cs = new CategoryService();
-		UserService us = new UserService();
 		ps.insert(new Post(0, "Fajitas", null, "Cook", "ingredients", cs.findById(2),
 				us.findById(3)));
 	}
@@ -59,9 +57,9 @@ public class Driver {
 		
 	}
 	
-	private static void deletePost() {
-		PostService ps = new PostService();
-		ps.delete(3);
-	}
+//	private static void deletePost() {
+//		PostService ps = new PostService();
+//		ps.delete(3);
+//	}
 
 }

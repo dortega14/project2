@@ -42,8 +42,12 @@ public class UserService {
 		return ud.insert(user);
 	}
 	
-	public void delete(int id) {
-		ud.delete(id);
+	public void delete(User user) {
+		ud.delete(user);
+	}
+	
+	public User findByUsername(String name) {
+		return ud.findByName(name);
 	}
 
 }

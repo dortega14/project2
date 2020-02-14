@@ -34,8 +34,8 @@ public final class LikeTypeService {
 		return ltd.insert(lt);
 	}
 	
-	public void delete(int id) {
-		ltd.delete(id);
+	public void delete(LikeType lt) {
+		ltd.delete(lt);
 	}
 
 }

@@ -34,8 +34,8 @@ public class CategoryService {
 		return cd.insert(cat);
 	}
 	
-	public void delete(int id) {
-		cd.delete(id);
+	public void delete(Category cat) {
+		cd.delete(cat);
 	}
 
 }

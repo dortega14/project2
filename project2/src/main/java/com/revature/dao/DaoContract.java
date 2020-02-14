@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-@Transactional
 public interface DaoContract<T> {
 
 	List<T> findAll();
@@ -17,7 +16,7 @@ public interface DaoContract<T> {
 
 	T insert(T t);
 
-	void delete(int id);
+	void delete(T t);
 
 	T findByName(String name);
 

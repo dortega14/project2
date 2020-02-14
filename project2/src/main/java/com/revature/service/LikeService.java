@@ -43,8 +43,8 @@ public class LikeService {
 		return ld.insert(like);
 	}
 	
-	public void delete(int id) {
-		ld.delete(id);
+	public void delete(Like like) {
+		ld.delete(like);
 	}
 
 }

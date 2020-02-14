@@ -12,7 +12,7 @@ import com.revature.model.YouTubeLink;
 
 @Repository
 @Transactional
-public class YouTubeLinkDao implements DaoContract<YouTubeLink> {
+public class YouTubeLinkDao {
 
 	private SessionFactory sesfact;
 	
@@ -22,35 +22,29 @@ public class YouTubeLinkDao implements DaoContract<YouTubeLink> {
 		this.sesfact = sesfact;
 	}
 
-	@Override
 	public List<YouTubeLink> findAll() {
-		return sesfact.openSession().createQuery("from yt_links", YouTubeLink.class).list();
+		return sesfact.getCurrentSession().createQuery("from yt_links", YouTubeLink.class).list();
 	}
 
-	@Override
 	public YouTubeLink findById(int id) {
-		return sesfact.openSession().get(YouTubeLink.class, id);
+		return sesfact.getCurrentSession().get(YouTubeLink.class, id);
 	}
 
-	@Override
 	public YouTubeLink update(YouTubeLink t) {
-		sesfact.openSession().update(t);
+		sesfact.getCurrentSession().update(t);
 		return t;
 	}
 
-	@Override
 	public YouTubeLink insert(YouTubeLink t) {
-		sesfact.openSession().save(t);
+		sesfact.getCurrentSession().save(t);
 		return t;
 	}
 
-	@Override
-	public void delete(int id) {
-		// TODO Auto-generated method stub
+	public void delete(YouTubeLink t) {
+		sesfact.getCurrentSession().delete(t);
 		
 	}
 
-	@Override
 	public YouTubeLink findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;

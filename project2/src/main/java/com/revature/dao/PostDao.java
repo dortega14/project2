@@ -11,7 +11,7 @@ import com.revature.model.Post;
 
 @Repository
 @Transactional
-public class PostDao implements DaoContract<Post> {
+public class PostDao {
 	
 	private SessionFactory sesfact;
 	
@@ -21,34 +21,28 @@ public class PostDao implements DaoContract<Post> {
 		this.sesfact = sesfact;
 	}
 
-	@Override
 	public List<Post> findAll() {
-		return sesfact.openSession().createQuery("from posts order by submitted", Post.class).list();
+		return sesfact.getCurrentSession().createQuery("from posts order by submitted", Post.class).list();
 	}
 
-	@Override
 	public Post findById(int id) {
-		return sesfact.openSession().get(Post.class, id);
+		return sesfact.getCurrentSession().get(Post.class, id);
 	}
 
-	@Override
 	public Post update(Post t) {
-		sesfact.openSession().update(t);
+		sesfact.getCurrentSession().update(t);
 		return t;
 	}
 
-	@Override
 	public Post insert(Post t) {
-		sesfact.openSession().save(t);
+		sesfact.getCurrentSession().save(t);
 		return t;
 	}
 
-	@Override
-	public void delete(int id) {
-		sesfact.openSession().delete(new Post(id));
+	public void delete(Post t) {
+		sesfact.getCurrentSession().delete(t);
 	}
 
-	@Override
 	public Post findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;

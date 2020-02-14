@@ -12,7 +12,7 @@ import com.revature.model.Comment;
 
 @Repository
 @Transactional
-public class CommentDao implements DaoContract<Comment> {
+public class CommentDao {
 
 	private SessionFactory sesfact;
 	
@@ -22,34 +22,28 @@ public class CommentDao implements DaoContract<Comment> {
 		this.sesfact = sesfact;
 	}
 	
-	@Override
 	public List<Comment> findAll() {
-		return sesfact.openSession().createQuery("from comments", Comment.class).list();
+		return sesfact.getCurrentSession().createQuery("from comments", Comment.class).list();
 	}
 
-	@Override
 	public Comment findById(int id) {
-		return sesfact.openSession().get(Comment.class, id);
+		return sesfact.getCurrentSession().get(Comment.class, id);
 	}
 
-	@Override
 	public Comment update(Comment t) {
-		sesfact.openSession().update(t);
+		sesfact.getCurrentSession().update(t);
 		return t;
 	}
 
-	@Override
 	public Comment insert(Comment t) {
-		sesfact.openSession().save(t);
+		sesfact.getCurrentSession().save(t);
 		return t;
 	}
 
-	@Override
-	public void delete(int id) {
-		
+	public void delete(Comment t) {
+		sesfact.getCurrentSession().delete(t);
 	}
 
-	@Override
 	public Comment findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
