@@ -16,37 +16,37 @@ import com.revature.service.LikeService;
 @Controller
 public class LikeController {
 	
-	@Autowired
 	private LikeService ls;
 
+	@Autowired
 	public void setLs(LikeService ls) {
 		this.ls = ls;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<List<Like>> readAllLikes(){
-		return new ResponseEntity<>(ls.readAll(), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<Like> findLikeById(int id){
-		return new ResponseEntity<>(ls.findById(id), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Like> updateLike(@RequestBody Like like){
-		return new ResponseEntity<>(ls.update(like), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Like> insertNewLike(@RequestBody Like like){
-		return new ResponseEntity<>(ls.insert(like), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Like> deleteLike(@RequestBody Like like){
-		ls.delete(like);
-		return new ResponseEntity<>(HttpStatus.ACCEPTED);
-	}
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<List<Like>> readAllLikes(){
+//		return new ResponseEntity<>(ls.readAll(), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<Like> findLikeById(int id){
+//		return new ResponseEntity<>(ls.findById(id), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Like> updateLike(@RequestBody Like like){
+//		return new ResponseEntity<>(ls.update(like), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Like> insertNewLike(@RequestBody Like like){
+//		return new ResponseEntity<>(ls.insert(like), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Like> deleteLike(@RequestBody Like like){
+//		ls.delete(like);
+//		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+//	}
 
 }

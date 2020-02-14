@@ -23,30 +23,30 @@ public class CategoryController {
 		this.cs = cs;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<List<Category>> readAllCategories(){
-		return new ResponseEntity<>(cs.readAll(), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<Category> findCategoryById(int id){
-		return new ResponseEntity<>(cs.findById(id), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Category> updateCategory(@RequestBody Category cat){
-		return new ResponseEntity<>(cs.update(cat), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Category> insertNewCategory(@RequestBody Category cat){
-		return new ResponseEntity<>(cs.insert(cat), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Category> deleteCategory(@RequestBody Category cat){
-		cs.delete(cat);
-		return new ResponseEntity<>(HttpStatus.ACCEPTED);
-	}
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<List<Category>> readAllCategories(){
+//		return new ResponseEntity<>(cs.readAll(), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<Category> findCategoryById(int id){
+//		return new ResponseEntity<>(cs.findById(id), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Category> updateCategory(@RequestBody Category cat){
+//		return new ResponseEntity<>(cs.update(cat), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Category> insertNewCategory(@RequestBody Category cat){
+//		return new ResponseEntity<>(cs.insert(cat), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Category> deleteCategory(@RequestBody Category cat){
+//		cs.delete(cat);
+//		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+//	}
 
 }

@@ -16,37 +16,37 @@ import com.revature.service.ProfileService;
 @Controller
 public class ProfileController {
 
-	@Autowired
 	private ProfileService ps;
 
+	@Autowired
 	public void setPs(ProfileService ps) {
 		this.ps = ps;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<List<Profile>> readAllProfiles(){
-		return new ResponseEntity<>(ps.readAll(), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<Profile> findProfileById(int id){
-		return new ResponseEntity<>(ps.findById(id), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Profile> updateProfile(@RequestBody Profile prof){
-		return new ResponseEntity<>(ps.update(prof), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Profile> insertNewProfile(@RequestBody Profile prof){
-		return new ResponseEntity<>(ps.insert(prof), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Profile> deleteProfile(@RequestBody Profile prof){
-		ps.delete(prof);
-		return new ResponseEntity<>(HttpStatus.ACCEPTED);
-	}
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<List<Profile>> readAllProfiles(){
+//		return new ResponseEntity<>(ps.readAll(), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<Profile> findProfileById(int id){
+//		return new ResponseEntity<>(ps.findById(id), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Profile> updateProfile(@RequestBody Profile prof){
+//		return new ResponseEntity<>(ps.update(prof), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Profile> insertNewProfile(@RequestBody Profile prof){
+//		return new ResponseEntity<>(ps.insert(prof), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Profile> deleteProfile(@RequestBody Profile prof){
+//		ps.delete(prof);
+//		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+//	}
 	
 }

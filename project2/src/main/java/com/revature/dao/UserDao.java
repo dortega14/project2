@@ -22,7 +22,7 @@ public class UserDao {
 	}
 
 	public List<User> findAll() {
-		return sesfact.getCurrentSession().createQuery("from users", User.class).list();
+		return sesfact.getCurrentSession().createQuery("from User", User.class).list();
 	}
 
 	public User findById(int id) {

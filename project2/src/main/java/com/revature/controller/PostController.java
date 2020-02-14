@@ -16,38 +16,38 @@ import com.revature.service.PostService;
 @Controller
 public class PostController {
 
-	@Autowired
 	private PostService ps;
 
+	@Autowired
 	public void setPs(PostService ps) {
 		this.ps = ps;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<List<Post>> readAllPosts(){
-		return new ResponseEntity<>(ps.readAll(), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<Post> findPostById(int id){
-		return new ResponseEntity<>(ps.findById(id), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Post> updatePost(@RequestBody Post post){
-		return new ResponseEntity<>(ps.update(post), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Post> insertNewPost(@RequestBody Post post){
-		return new ResponseEntity<>(ps.insert(post), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<Post> deletePost(@RequestBody Post post) {
-		ps.delete(post);
-		return new ResponseEntity<>(HttpStatus.ACCEPTED);
-	}
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<List<Post>> readAllPosts(){
+//		return new ResponseEntity<>(ps.readAll(), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<Post> findPostById(int id){
+//		return new ResponseEntity<>(ps.findById(id), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Post> updatePost(@RequestBody Post post){
+//		return new ResponseEntity<>(ps.update(post), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Post> insertNewPost(@RequestBody Post post){
+//		return new ResponseEntity<>(ps.insert(post), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<Post> deletePost(@RequestBody Post post) {
+//		ps.delete(post);
+//		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+//	}
 	
 	
 }

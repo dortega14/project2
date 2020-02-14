@@ -16,37 +16,37 @@ import com.revature.service.LikeTypeService;
 @Controller
 public class LikeTypeController {
 	
-	@Autowired
 	private LikeTypeService lts;
 
+	@Autowired
 	public void setLts(LikeTypeService lts) {
 		this.lts = lts;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<List<LikeType>> readAllLikeTypes(){
-		return new ResponseEntity<>(lts.readAll(), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
-	public ResponseEntity<LikeType> findLikeTypeById(int id){
-		return new ResponseEntity<>(lts.findById(id), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<LikeType> updateLikeType(@RequestBody LikeType lt){
-		return new ResponseEntity<>(lts.update(lt), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<LikeType> insertNewLikeType(@RequestBody LikeType lt){
-		return new ResponseEntity<>(lts.insert(lt), HttpStatus.ACCEPTED);
-	}
-	
-	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
-	public ResponseEntity<LikeType> deleteLikeType(@RequestBody LikeType lt){
-		lts.delete(lt);
-		return new ResponseEntity<>(HttpStatus.ACCEPTED);
-	}
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<List<LikeType>> readAllLikeTypes(){
+//		return new ResponseEntity<>(lts.readAll(), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.GET, value = "", produces = "application/json")
+//	public ResponseEntity<LikeType> findLikeTypeById(int id){
+//		return new ResponseEntity<>(lts.findById(id), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<LikeType> updateLikeType(@RequestBody LikeType lt){
+//		return new ResponseEntity<>(lts.update(lt), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<LikeType> insertNewLikeType(@RequestBody LikeType lt){
+//		return new ResponseEntity<>(lts.insert(lt), HttpStatus.ACCEPTED);
+//	}
+//	
+//	@RequestMapping(method = RequestMethod.POST, value = "", produces = "application/json")
+//	public ResponseEntity<LikeType> deleteLikeType(@RequestBody LikeType lt){
+//		lts.delete(lt);
+//		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+//	}
 
 }
