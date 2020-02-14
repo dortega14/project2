@@ -12,7 +12,7 @@ export class YTComponent extends React.PureComponent<IYoutube> {
             height: '390',
             width: '640',
             playerVars: { // https://developers.google.com/youtube/player_parameters
-              start: {this.props.time},
+              start: this.props.time,
               autoplay: 0
             }
           };
@@ -20,7 +20,6 @@ export class YTComponent extends React.PureComponent<IYoutube> {
             <>
                 <YouTube 
                     videoId={this.props.ytlink}
-                    opts={opts}
                 />
             </>
         )

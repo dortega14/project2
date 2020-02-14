@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
 import { CardBody, Card } from "reactstrap";
-import { publishPost } from "../../utilities/api";
+import { publishPost, getList } from "../../utilities/api";
 import { IPost } from "../../model/IPost";
+import React from "react";
 
 export const PostCardComponent:React.FC<any>=(props:any) => {
     const [postStream, setPostStream] = useState([]);
     useEffect(() => {
-        publishPost().then(r=>setPostStream(r.data)); 
+        getList().then(r=>setPostStream(r.data)); 
         
     });
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IPost } from "../../model/IPost";
 import { CardBody, CardTitle, CardSubtitle, CardText, CardImg } from 'reactstrap';
-import { YTComponent } from "../youtube-component/YouTubeComponent";
+import  YTComponent  from "../youtube-component/YouTubeComponent";
 
 export interface IPst{
     post: IPost
@@ -46,7 +46,7 @@ export const PostBodyComponent:React.FC<IPst> = (props:IPst) => {
             <CardText>{props.post.recipe}</CardText>
             <CardText>{props.post.submitted}</CardText>
           </CardBody>
-          <YTComponent/>
+          let YTHere = function statelessFunctionComponentClass(props) {YTComponent};
         </>
     )
 } 
