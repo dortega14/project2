@@ -26,5 +26,5 @@ export const postComment = (body: IComment) => {
 }
 
 export const regUser = (body: IRegister) => {
-    return axiosConfg.post('reg.app', body);
+    return axiosConfg.post('/newuser.app', body);
 }
