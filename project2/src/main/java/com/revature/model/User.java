@@ -94,30 +94,6 @@ public class User {
 		this.email = email;
 	}
 
-	public Profile getProfile() {
-		return profile;
-	}
-
-	public void setProfile(Profile profile) {
-		this.profile = profile;
-	}
-
-	public Set<Comment> getUserComment() {
-		return userComment;
-	}
-
-	public void setUserComment(Set<Comment> userComment) {
-		this.userComment = userComment;
-	}
-
-	public Set<Like> getUserLike() {
-		return userLike;
-	}
-
-	public void setUserLike(Set<Like> userLike) {
-		this.userLike = userLike;
-	}
-
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -133,19 +109,19 @@ public class User {
 		this.email = email;
 	}
 
-	public User(int userId, String username, String password, String firstName, String lastName, String email,
-			Profile profile, Set<Comment> userComment, Set<Like> userLike) {
-		super();
-		this.userId = userId;
-		this.username = username;
-		this.password = password;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.profile = profile;
-		this.userComment = userComment;
-		this.userLike = userLike;
-	}
+//	public User(int userId, String username, String password, String firstName, String lastName, String email,
+//			Profile profile, Set<Comment> userComment, Set<Like> userLike) {
+//		super();
+//		this.userId = userId;
+//		this.username = username;
+//		this.password = password;
+//		this.firstName = firstName;
+//		this.lastName = lastName;
+//		this.email = email;
+//		this.profile = profile;
+//		this.userComment = userComment;
+//		this.userLike = userLike;
+//	}
 
 	@Override
 	public String toString() {

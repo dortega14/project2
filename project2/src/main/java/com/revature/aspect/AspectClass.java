@@ -13,8 +13,33 @@ import org.aspectj.lang.annotation.Aspect;
 public class AspectClass {
 	
 	@After("execution(* findAll(..))")
-	public void adviceMethodAfter(JoinPoint jp) {
+	public void adviceMethodAfterFindAll(JoinPoint jp) {
 		Log4j.log.info("findAll method in the Dao has ran.");
+	}
+	
+	@After("execution(* findById(..))")
+	public void adviceMethodAfterFindById(JoinPoint jp) {
+		Log4j.log.info("findById method in the Dao has ran.");
+	}
+	
+	@After("execution(* update(..))")
+	public void adviceMethodAfterUpdate(JoinPoint jp) {
+		Log4j.log.info("update method in the Dao has ran.");
+	}
+	
+	@After("execution(* insert(..))")
+	public void adviceMethodAfterInsert(JoinPoint jp) {
+		Log4j.log.info("insert method in the Dao has ran.");
+	}
+	
+	@After("execution(* delete(..))")
+	public void adviceMethodAfterDelete(JoinPoint jp) {
+		Log4j.log.info("delete method in the Dao has ran.");
+	}
+	
+	@After("execution(* findByName(..))")
+	public void adviceMethodAfterFindByName(JoinPoint jp) {
+		Log4j.log.info("findByName method in the Dao has ran.");
 	}
 
 }

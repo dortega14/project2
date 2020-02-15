@@ -9,7 +9,7 @@ import com.revature.dao.LikeTypeDao;
 import com.revature.model.LikeType;
 
 @Service
-public final class LikeTypeService {
+public class LikeTypeService {
 	
 	private LikeTypeDao ltd;
 

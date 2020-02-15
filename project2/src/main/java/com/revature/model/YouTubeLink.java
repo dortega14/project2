@@ -67,6 +67,13 @@ public class YouTubeLink {
 		// TODO Auto-generated constructor stub
 	}
 
+	public YouTubeLink(String videoId, int startTime, Post ytPost) {
+		super();
+		this.videoId = videoId;
+		this.startTime = startTime;
+		this.ytPost = ytPost;
+	}
+
 	public YouTubeLink(int youTubeId, String videoId, int startTime) {
 		super();
 		this.youTubeId = youTubeId;

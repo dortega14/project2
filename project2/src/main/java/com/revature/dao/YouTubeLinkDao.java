@@ -23,7 +23,7 @@ public class YouTubeLinkDao {
 	}
 
 	public List<YouTubeLink> findAll() {
-		return sesfact.getCurrentSession().createQuery("from yt_links", YouTubeLink.class).list();
+		return sesfact.getCurrentSession().createQuery("from YouTubeLink", YouTubeLink.class).list();
 	}
 
 	public YouTubeLink findById(int id) {

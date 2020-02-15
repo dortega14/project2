@@ -22,7 +22,7 @@ public class ProfileDao {
 	}
 	
 	public List<Profile> findAll() {
-		return sesfact.getCurrentSession().createQuery("from profile", Profile.class).list();
+		return sesfact.getCurrentSession().createQuery("from Profile", Profile.class).list();
 	}
 
 	public Profile findById(int id) {

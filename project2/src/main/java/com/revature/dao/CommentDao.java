@@ -23,7 +23,7 @@ public class CommentDao {
 	}
 	
 	public List<Comment> findAll() {
-		return sesfact.getCurrentSession().createQuery("from comments", Comment.class).list();
+		return sesfact.getCurrentSession().createQuery("from Comment", Comment.class).list();
 	}
 
 	public Comment findById(int id) {

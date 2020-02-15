@@ -44,7 +44,7 @@ public class UserDao {
 	}
 
 	public User findByName(String name) {
-		return sesfact.getCurrentSession().createQuery("from users where usernname = '" + name + "'", User.class).list().get(0);
+		return sesfact.getCurrentSession().createQuery("from User where username = '" + name + "'", User.class).list().get(0);
 	}
 
 	

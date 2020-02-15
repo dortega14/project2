@@ -14,7 +14,7 @@ import com.revature.service.UserService;
 
 public class Driver {
 	
-	public static ApplicationContext ac = new ClassPathXmlApplicationContext("src/main/webapp/WEB-INF/applicationContext.xml");
+	public static ApplicationContext ac = new ClassPathXmlApplicationContext("Bean.xml");
 	
 	static UserService us = ac.getBean(UserService.class);
 	static LikeTypeService lts = ac.getBean(LikeTypeService.class);
@@ -25,9 +25,10 @@ public class Driver {
 //		initializeCategory();
 //		initializeLikeType();
 //		initializeUser();
-		initializePost();
+//		initializePost();
 //		deleteUser();
 //		viewAllUsers();
+		findUserByUsername();
 	}
 
 	private static void initializeCategory() {
@@ -53,8 +54,8 @@ public class Driver {
 				us.findById(1)));
 	}
 	
-	private static void deleteUser() {
-		
+	private static User findUserByUsername() {
+		return us.findByUsername("palkrom");
 	}
 	
 	private static void viewAllUsers() {

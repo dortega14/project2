@@ -22,7 +22,7 @@ public class CategoryDao {
 	}
 
 	public List<Category> findAll() {
-		return sesfact.getCurrentSession().createQuery("from categories", Category.class).list();
+		return sesfact.getCurrentSession().createQuery("from Category", Category.class).list();
 	}
 
 	public Category findById(int id) {

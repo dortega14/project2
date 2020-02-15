@@ -22,7 +22,7 @@ public class LikeTypeDao {
 	}
 	
 	public List<LikeType> findAll() {
-		return sesfact.getCurrentSession().createQuery("from like_types", LikeType.class).list();
+		return sesfact.getCurrentSession().createQuery("from LikeType", LikeType.class).list();
 	}
 
 	public LikeType findById(int id) {
