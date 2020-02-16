@@ -4,7 +4,7 @@ import MainPage from './components/main-page-component/MainPage.tsx'
 import HomeP from './components/home-page-component/HomePageComponent.tsx'
 import ProfileP from './components/profile-page-component/ProfilePageComponent.tsx'
 import Register from './components/registration-component/RegistrationComponent.tsx'
-import Login from './components/login-component/LoginComponent.tsx'
+import Login from './components/login-component/LoginContainer.tsx'
 import {BrowserRouter, Switch, Route } from 'react-router-dom';
 import {Links} from 'react-router-dom';
 
