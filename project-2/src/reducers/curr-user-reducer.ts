@@ -1,20 +1,33 @@
-
+import { ICurrUserState } from ".";
+import { loginTypes } from "../action-mappers/login-actions";
 
 const intialState:ICurrUserState = {
-    id: 0,
-    username: "",
-    password: "",
-    firstName: "",
-    lastName: "",
-    email: ""
+    currUser: {
+        id: 0,
+        username: "",
+        password: "",
+        firstName: "",
+        lastName: "",
+        email: ""
+    },
+    loginMessage: ""
 }
 
-export const CurrUserReducer = (state = intialState, action:any) => {
+export const currUserReducer = (state = intialState, action:any) => {
     switch (action.type) {
-        case "yes":
-            return null;
-        case "no":
-            return null;
+        case loginTypes.LOGIN_SUCCESS: {
+            return {
+                ...state,
+                currUser:action.payload.currUser,
+                loginMessage: "Login Successful!"
+            };
+        }
+        case loginTypes.LOGIN_UNSUCCESS: {
+            return {
+                ...state,
+                loginMessage:action.payload.loginMessage
+            };
+        }
         default:
             return state;
     }
