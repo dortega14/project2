@@ -1,6 +1,6 @@
 import { IState } from "../../reducers";
 import { connect } from "react-redux";
-import LoginComponent from "./LoginComponent";
+import { LoginComponent } from "./LoginComponent";
 import { updateCurrentUser } from "../../action-mappers/login-actions";
 
 

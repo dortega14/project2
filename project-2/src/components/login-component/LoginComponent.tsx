@@ -90,6 +90,3 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
 function toProfileP (){
  
 }
-
-
-export default Login;
