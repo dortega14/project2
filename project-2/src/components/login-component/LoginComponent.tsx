@@ -1,9 +1,7 @@
-import React, { useState, SyntheticEvent } from 'react';
+import React, {  SyntheticEvent } from 'react';
 import '../../css/Main.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import {Redirect, Route, NavLink} from 'react-router-dom';
-import { render } from '@testing-library/react';
-import { authenticateUser } from '../../utilities/api';
+import {NavLink} from 'react-router-dom';
 
 interface ILoginState {
     username: string,

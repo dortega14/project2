@@ -1,7 +1,6 @@
 import  axiosConfig, { axiosConfg }  from "./axiosConfig";
-import axios from "axios";
+//import axios from "axios";
 import { IPost } from "../model/IPost";
-import IUser from "../model/IUser";
 import { ILike } from "../model/ILike";
 import { IComment } from "../model/IComment";
 import IRegister from "../model/IRegister";
@@ -14,13 +13,17 @@ export const publishPost = (body: IPost) => {
     return axiosConfig.post('add.app',body);
 }
 
-export const authenticateUser = (username:string, password:string) => {
+export const authenticateUser = async (username:string, password:string) => {
     let credentials = {
         username,
         password
     }
 
-    return axios.post('https://api.myjson.com/bins/6amgk'/*, credentials*/);
+    //let response = await axios.get('https://api.myjson.com/bins/6amgk'/*, credentials*/);
+
+    let response = await axiosConfg.post('login.app', credentials)
+    //console.log(response);
+    return response;
 }
 
 export const hitLike = (body: ILike) => {

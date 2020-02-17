@@ -1,5 +1,4 @@
 import { authenticateUser } from "../utilities/api";
-import IUser from "../model/IUser";
 
 export const loginTypes = {
     LOGIN_SUCCESS: 'LOGIN_LOGIN_SUCCESS',
@@ -11,12 +10,13 @@ export const updateCurrentUser = (username:string, password:string) =>
     
 
     let response:any = await authenticateUser(username, password);
+    console.log(response.body);
     switch (response.status) {
         case 200:
             dispatch({
                 type:loginTypes.LOGIN_SUCCESS,
                 payload:{
-                    currUser:response.body
+                    currUser:response.data
                 }
             });
             break;
