@@ -4,6 +4,7 @@ import { IPost } from "../model/IPost";
 import { ILike } from "../model/ILike";
 import { IComment } from "../model/IComment";
 import IRegister from "../model/IRegister";
+import IUser from "../model/IUser";
 
 export const getList = () =>{
     return axiosConfig.get("list.app");
@@ -14,10 +15,11 @@ export const publishPost = (body: IPost) => {
 }
 
 export const authenticateUser = async (username:string, password:string) => {
-    let credentials = {
-        username,
-        password
-    }
+    let credentials:IUser = {
+        user_id: 0,
+        username: username,
+        password: password
+    };
 
     //let response = await axios.get('https://api.myjson.com/bins/6amgk'/*, credentials*/);
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/Main.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import {Redirect, Route, NavLink} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 
 function main () {

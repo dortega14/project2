@@ -39,14 +39,14 @@ export const PostBodyComponent:React.FC<IPst> = (props:IPst) => {
           <CardImg>{props.post.image}</CardImg>
           <CardBody>
             <CardTitle>{props.post.title}</CardTitle>
-            //Display category_name here
+            {/*Display category_name here*/}
             <CardSubtitle>{props.post.category_post_id}</CardSubtitle>
-            //Multiple Cardtexts to be tested if it works
+            {/*Multiple Cardtexts to be tested if it works*/}
             <CardText>{props.post.ingredients}</CardText>
             <CardText>{props.post.recipe}</CardText>
             <CardText>{props.post.submitted}</CardText>
           </CardBody>
-          let YTHere = function statelessFunctionComponentClass(props) {YTComponent};
+          {}
         </>
     )
 } 

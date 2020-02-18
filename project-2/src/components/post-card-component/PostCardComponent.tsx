@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { CardBody, Card } from "reactstrap";
-import { publishPost, getList } from "../../utilities/api";
+import { getList } from "../../utilities/api";
 import { IPost } from "../../model/IPost";
 import React from "react";
 

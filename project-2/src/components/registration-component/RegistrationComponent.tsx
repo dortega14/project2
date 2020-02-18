@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/Register.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import {Redirect, NavLink} from 'react-router-dom';
-import { Route } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import { regUser } from '../../utilities/api';
 
 export const Register:React.FC<any> = (props:any) => {
@@ -39,7 +38,7 @@ export const Register:React.FC<any> = (props:any) => {
             }).then(r=>console.log(r.data))}>
                 <div id="RegisterElements" className="row">
                 <div className="TextForRegister">
-                    <p>Indulge in an exciting experence </p>
+                    <p>Indulge in an exciting experience </p>
                     <p>by becoming a memeber of</p>
                     <p>the recipe family</p>
                 </div>

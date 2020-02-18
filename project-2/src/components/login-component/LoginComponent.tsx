@@ -32,7 +32,7 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
     updatePassword = (event: any) => {
         this.setState({
             ...this.state,
-            username: event.target.value
+            password:event.target.value
         });
     }
 
@@ -66,7 +66,7 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
                     </div>
                         <div className="form-group col-md-4">
                             <label id="EmailInput" htmlFor="exampleInputEmail1">Username</label>
-                            <input type="email" className="form-control input-lg" id="username" aria-describedby="usernameField" placeholder="Username" value={this.state.username} onChange={this.updateUsername}/>
+                            <input type="text" className="form-control input-lg" id="username" aria-describedby="usernameField" placeholder="Username" value={this.state.username} onChange={this.updateUsername}/>
                             <small id="emailHelp" className="form-text text-muted"></small>
                         </div>
                         <div className="form-group col-md-4">
