@@ -19,7 +19,7 @@ export const currUserReducer = (state = intialState, action:any) => {
             return {
                 ...state,
                 currUser:action.payload.currUser,
-                loginMessage: "Login Successful!"
+                loginMessage:"Login Successful!"
             };
         }
         case loginTypes.LOGIN_UNSUCCESS: {

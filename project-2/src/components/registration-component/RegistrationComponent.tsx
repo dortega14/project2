@@ -8,8 +8,8 @@ export const Register:React.FC<any> = (props:any) => {
     const [email, setemail] = useState("");
     const [username, setuname] = useState("");
     const [password, setpass] = useState("");
-    const [first_name, setfirst] = useState("");
-    const [last_name, setlast] = useState("");
+    const [firstName, setfirst] = useState("");
+    const [lastName, setlast] = useState("");
     
     return(
         <div >
@@ -33,8 +33,8 @@ export const Register:React.FC<any> = (props:any) => {
                 email: email,
                 username: username,
                 password: password,
-                first_name: first_name,
-                last_name: last_name
+                firstName: firstName,
+                lastName: lastName
             }).then(r=>console.log(r.data))}>
                 <div id="RegisterElements" className="row">
                 <div className="TextForRegister">

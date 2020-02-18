@@ -44,7 +44,7 @@ export const PostBodyComponent:React.FC<IPst> = (props:IPst) => {
             {/*Multiple Cardtexts to be tested if it works*/}
             <CardText>{props.post.ingredients}</CardText>
             <CardText>{props.post.recipe}</CardText>
-            <CardText>{props.post.submitted}</CardText>
+            <CardText>{props.post.postSubmitted}</CardText>
           </CardBody>
           {}
         </>

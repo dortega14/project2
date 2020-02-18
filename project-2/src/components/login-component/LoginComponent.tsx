@@ -25,7 +25,7 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
     updateUsername = (event: any) => {
         this.setState({
             ...this.state,
-            username: event.target.value
+            username:event.target.value
         });
     }
 
