@@ -4,7 +4,6 @@ import java.sql.Blob;
 import java.sql.Timestamp;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -14,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -44,15 +44,16 @@ public class Post {
 	private String ingredients;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "category_post_id")
+	@JoinColumn(name = "post_category_id")
 	private Category postCategory;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "post_user_id")
 	private User postUser;
 
-	@OneToMany(mappedBy = "ytPost", fetch = FetchType.LAZY)
-	private Set<YouTubeLink> postYtLink;
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "post_yt_id")
+	private YouTubeLink postYtLink;
 
 	@OneToMany(mappedBy = "commentPost", fetch = FetchType.LAZY)
 	private Set<Comment> postComment;
@@ -124,11 +125,11 @@ public class Post {
 		this.postUser = postUser;
 	}
 
-	public Set<YouTubeLink> getPostYtLink() {
+	public YouTubeLink getPostYtLink() {
 		return postYtLink;
 	}
 
-	public void setPostYtLink(Set<YouTubeLink> postYtLink) {
+	public void setPostYtLink(YouTubeLink postYtLink) {
 		this.postYtLink = postYtLink;
 	}
 
@@ -186,7 +187,7 @@ public class Post {
 	}
 
 	public Post(int postId, String title, Blob image, String recipe, String ingredients, Category postCategory,
-			User postUser, Set<YouTubeLink> postYtLink, Set<Comment> postComment, Set<Like> postLike) {
+			User postUser, YouTubeLink postYtLink, Set<Comment> postComment, Set<Like> postLike) {
 		super();
 		this.postId = postId;
 		this.title = title;

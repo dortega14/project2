@@ -11,24 +11,28 @@ import com.revature.service.CategoryService;
 import com.revature.service.LikeTypeService;
 import com.revature.service.PostService;
 import com.revature.service.UserService;
+import com.revature.service.YouTubeLinkService;
 
 public class Driver {
-	
+
 	public static ApplicationContext ac = new ClassPathXmlApplicationContext("Bean.xml");
-	
+
 	static UserService us = ac.getBean(UserService.class);
 	static LikeTypeService lts = ac.getBean(LikeTypeService.class);
 	static CategoryService cs = ac.getBean(CategoryService.class);
 	static PostService ps = ac.getBean(PostService.class);
+	static YouTubeLinkService ytls = ac.getBean(YouTubeLinkService.class);
 
 	public static void main(String[] args) {
-//		initializeCategory();
-//		initializeLikeType();
+
+		initializeCategory();
+		initializeLikeType();
 //		initializeUser();
 //		initializePost();
 //		deleteUser();
 //		viewAllUsers();
-		findUserByUsername();
+//		findUserByUsername();
+//		initializePostWithYtLink();
 	}
 
 	private static void initializeCategory() {
@@ -50,14 +54,21 @@ public class Driver {
 	}
 
 	private static void initializePost() {
-		ps.insert(new Post(0, "Fajitas", null, "Cook", "ingredients", cs.findById(2),
+//		ps.insert(new Post(0, "Fajitas", null, "Cook", "ingredients", cs.findById(2),
+//				us.findById(1)));
+		ps.insert(new Post(0, "Tacos", null, "Cook the dang thing", "tortilla, meat, cheese", cs.findById(2),
 				us.findById(1)));
 	}
-	
+
+	private static void initializePostWithYtLink() {
+		ytls.extractYT(new Post(0, "Fajitas", null, "Cook with khttp://youtube.com/watch?v=jJ2qlKLYKxc&t=54",
+				"ingredients", cs.findById(2), us.findById(1)));
+	}
+
 	private static User findUserByUsername() {
 		return us.findByUsername("palkrom");
 	}
-	
+
 	private static void viewAllUsers() {
 		System.out.println(us.readAll());
 	}

@@ -1,6 +1,5 @@
 package com.revature.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -8,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -26,8 +25,7 @@ public class YouTubeLink {
 	@Column(name = "start_time")
 	private int startTime;
 
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "yt_post_id")
+	@OneToOne(mappedBy = "postYtLink", fetch = FetchType.LAZY)
 	private Post ytPost;
 
 	public int getYouTubeId() {

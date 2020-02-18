@@ -1,8 +1,9 @@
-import  axiosConfig  from "./axiosConfig";
+import  axiosConfig, { axiosConfg }  from "./axiosConfig";
 import { IPost } from "../model/IPost";
 import IUser from "../model/IUser";
 import { ILike } from "../model/ILike";
 import { IComment } from "../model/IComment";
+import IRegister from "../model/IRegister";
 
 export const getList = () =>{
     return axiosConfig.get("list.app");
@@ -22,4 +23,8 @@ export const hitLike = (body: ILike) => {
 
 export const postComment = (body: IComment) => {
     return axiosConfig.post('cmnt.app', body);
+}
+
+export const regUser = (body: IRegister) => {
+    return axiosConfg.post('/newuser.app', body);
 }

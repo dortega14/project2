@@ -1,5 +1,8 @@
 package com.revature.service;
 
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,5 +52,38 @@ public class UserService {
 	public User findByUsername(String name) {
 		return ud.findByName(name);
 	}
+	
+	public boolean checkPassword(String username, String password, User u)
+    {
+        String toHash = username + password + "salt";
+        String hashText = "";
+        try
+        {
+            MessageDigest md = MessageDigest.getInstance("md5");
+            
+            // digest() method is called to calculate message digest 
+            //  of an input digest() return array of byte 
+            byte[] messageDigest = md.digest(toHash.getBytes()); 
+  
+            // Convert byte array into signum representation 
+            BigInteger no = new BigInteger(1, messageDigest); 
+  
+            // Convert message digest into hex value 
+            hashText = no.toString(16); 
+            while (hashText.length() < 32) { 
+                hashText = "0" + hashText; 
+            }
+        } catch (NoSuchAlgorithmException e)
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        if (u.getPassword().equals(hashText))
+        {
+            return true;
+        }
+        return false;
+    }
 
 }

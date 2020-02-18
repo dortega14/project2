@@ -2817,3 +2817,341 @@ Caused by: org.postgresql.util.PSQLException: ERROR: constraint "fkjqv9sy8jt4bw0
 2020-02-15 16:35:30 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
 2020-02-15 16:35:38 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
 2020-02-15 16:35:41 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 19:37:25 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 19:37:26 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 19:37:29 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 19:37:38 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 19:37:41 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 19:37:46 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:37:46 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:37:47 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:37:47 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:42:29 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 19:42:31 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 19:42:35 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 19:42:43 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 19:42:45 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 19:42:58 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:42:58 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:42:58 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:42:59 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:47:25 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 19:47:26 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 19:47:30 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 19:47:38 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 19:47:42 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 19:47:48 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:47:48 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:47:49 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:47:49 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:53:26 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 19:53:27 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 19:53:30 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 19:53:39 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 19:53:42 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 19:54:05 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:54:06 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:54:06 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:54:06 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:56:10 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 19:56:11 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 19:56:14 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 19:56:22 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 19:56:25 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 19:56:29 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:56:29 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:56:30 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:56:30 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 19:59:53 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 19:59:54 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 19:59:58 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:00:08 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:00:11 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:00:19 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:00:19 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:00:20 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:00:20 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:01:07 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 20:01:07 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 20:01:10 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:01:18 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:01:20 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:01:24 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:01:24 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:01:25 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:01:25 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:03:26 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 20:03:27 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 20:03:31 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:03:39 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:03:43 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:04:44 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:04:44 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:04:45 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:04:45 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:07:36 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 20:07:37 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 20:07:41 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:07:50 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:07:53 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:08:08 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:08:08 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:08:09 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:08:09 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:11:50 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 20:11:50 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 20:11:53 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:12:01 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:12:02 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:12:06 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:12:06 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:12:07 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:12:07 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:29:16 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 20:29:17 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 20:29:19 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:29:27 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:29:29 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:29:32 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:29:32 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:29:33 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:29:33 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:30:09 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 20:30:10 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 20:30:12 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:30:22 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:30:24 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:30:27 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:30:27 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:30:28 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:30:28 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:30:28 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-15 20:30:28 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-15 20:32:41 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-15 20:32:41 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-15 20:32:43 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-15 20:32:52 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-15 20:32:54 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-15 20:32:58 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:32:58 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:32:59 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:32:59 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-15 20:32:59 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-15 20:33:00 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-16 14:52:39 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-16 14:52:40 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-16 14:52:43 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-16 14:52:51 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-16 14:52:54 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-16 14:59:13 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-16 14:59:13 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-16 14:59:17 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-16 14:59:24 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-16 14:59:26 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-16 15:05:07 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-16 15:05:07 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-16 15:05:10 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-16 15:05:18 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-16 15:05:20 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-16 15:34:12 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-16 15:34:12 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-16 15:34:15 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-16 15:34:23 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-16 15:34:26 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-17 21:36:17 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-17 21:36:18 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-17 21:36:22 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-17 21:36:30 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-17 21:36:33 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table public.posts 
+       drop constraint FK8y4m9lnux3cu8b7fadag2huvd" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table public.posts 
+       drop constraint FK8y4m9lnux3cu8b7fadag2huvd" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:616)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85)
+	at com.revature.driver.Driver.<clinit>(Driver.java:18)
+Caused by: org.postgresql.util.PSQLException: ERROR: constraint "fk8y4m9lnux3cu8b7fadag2huvd" of relation "posts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 69 more
+2020-02-17 21:36:33 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table public.posts 
+       drop constraint FK5l7rf6rh6vygkybbajayko8kk" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table public.posts 
+       drop constraint FK5l7rf6rh6vygkybbajayko8kk" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:616)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85)
+	at com.revature.driver.Driver.<clinit>(Driver.java:18)
+Caused by: org.postgresql.util.PSQLException: ERROR: constraint "fk5l7rf6rh6vygkybbajayko8kk" of relation "posts" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:269)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 69 more
+2020-02-17 21:36:33 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-17 21:36:33 WARN  SqlExceptionHelper:231 - drop cascades to constraint fk5sjh4gevys7yfw9nxq51agkbo on table posts
+2020-02-17 21:36:34 WARN  SqlExceptionHelper:230 - SQL Warning Code: 0, SQLState: 00000
+2020-02-17 21:36:34 WARN  SqlExceptionHelper:231 - drop cascades to constraint fkjqv9sy8jt4bw0eqcp7rvvx3x5 on table yt_links
+2020-02-17 21:36:35 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-17 21:36:39 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:39 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:40 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:40 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:41 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:41 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:41 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:41 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:42 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:42 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:42 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-17 21:36:42 INFO  Log4j:32 - insert method in the Dao has ran.
