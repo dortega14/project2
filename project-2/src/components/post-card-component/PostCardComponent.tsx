@@ -1,22 +1,45 @@
-import { useState, useEffect } from "react"
-import { CardBody, Card } from "reactstrap";
-import { publishPost, getList } from "../../utilities/api";
-import { IPost } from "../../model/IPost";
 import React from "react";
+import {
+  CardBody,
+  Card,
+  CardText,
+  CardSubtitle,
+  CardTitle,
+  CardImg
+} from "reactstrap";
+import { IPost } from "../../model/IPost";
+import { YTComponent } from "../yt-component/YTComponent"
+import { IYoutube } from "../../model/IYoutube";
 
-export const PostCardComponent:React.FC<any>=(props:any) => {
-    const [postStream, setPostStream] = useState([]);
-    useEffect(() => {
-        getList().then(r=>setPostStream(r.data)); 
-        
-    });
-
-    return (
-
-        <Card>
-            {postStream.map((r:IPost)=><CardBody key={r.post_id} post={r}/>)}
-        </Card>
-    )
+interface IPostProps {
+  post: IPost;
 }
 
-export default PostCardComponent;
+export class PostCardComponent extends React.PureComponent<IPostProps> {
+  render() {
+      /*const displayYoutube: YTComponent = () => {
+          if (this.props.post.postYtLink) {
+              return (
+                <YTComponent youtubeLinks={this.props.post.postYtLink} />
+              );
+          }
+      }*/
+    return (
+      <>
+        <Card>
+          <CardImg>{() => {if (this.props.post.image) return this.props.post.image}}</CardImg>
+          <CardBody>
+            <CardTitle>{this.props.post.title}</CardTitle>
+            {/*Display category_name here*/}
+            <CardSubtitle>{this.props.post.postCategory}</CardSubtitle>
+            {/*Multiple Cardtexts to be tested if it works*/}
+            <CardText>{this.props.post.ingredients}</CardText>
+            <CardText>{this.props.post.recipe}</CardText>
+            <CardText>{this.props.post.postSubmitted}</CardText>
+          </CardBody>
+        </Card>
+        {/*displayYoutube*/}
+      </>
+    );
+  }
+}

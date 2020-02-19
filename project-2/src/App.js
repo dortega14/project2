@@ -1,27 +1,32 @@
-import React from 'react';
-import './App.css';
-import MainPage from './components/main-page-component/MainPage.tsx'
-import HomeP from './components/home-page-component/HomePageComponent.tsx'
-import ProfileP from './components/profile-page-component/ProfilePageComponent.tsx'
-import Register from './components/registration-component/RegistrationComponent.tsx'
-import Login from './components/login-component/LoginComponent.tsx'
-import {BrowserRouter, Switch, Route } from 'react-router-dom';
-import {Links} from 'react-router-dom';
+import React from "react";
+import "./App.scss";
+import MainPage from "./components/main-page-component/MainPage.tsx";
+import HomeP from "./components/home-page-component/HomePageComponent.tsx";
+import ProfileP from "./components/profile-page-component/ProfilePageContainer";
+import Register from "./components/registration-component/RegistrationComponent.tsx";
+import LoginComponent from "./components/login-component/LoginContainer.tsx";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { store } from "./Store";
+import { Provider } from "react-redux";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App"> 
-      <Route path="/" exact component={MainPage} />
-      <Switch>
-       <MainPage path="/main" component={MainPage} />
-       <Login path="/Login" component={Login} />
-        <HomeP path="/homeP" component={HomeP} />
-        <ProfileP path="/profile" component={ProfileP} />
-        <Register path="/register" component={Register} />
-        </Switch> 
-      </div>
-    </BrowserRouter>
+    <div>
+      <Provider store={store} >
+      <BrowserRouter>
+        <div className="App">
+          <Route path="/" exact component={MainPage} />
+          <Switch>
+            <Route path="/main" component={MainPage} />
+            <Route path="/Login" component={LoginComponent} />
+            <Route path="/homeP" component={HomeP} />
+            <Route path="/profile" component={ProfileP} />
+            <Route path="/register" component={Register} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+      </Provider>
+    </div>
   );
 }
 

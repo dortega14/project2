@@ -1,7 +1,6 @@
 import React from 'react';
-import '../../css/Main.css'
+import '../../scss/Main.scss'
 import 'bootstrap/dist/css/bootstrap.css';
-import {Link} from 'react-router-dom';
 
 function HomeP () {
     return(
