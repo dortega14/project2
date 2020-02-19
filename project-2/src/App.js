@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import MainPage from "./components/main-page-component/MainPage.tsx";
 import HomeP from "./components/home-page-component/HomePageComponent.tsx";
-import ProfileP from "./components/profile-page-component/ProfilePageContainer";
+import ProfilePageComponent from "./components/profile-page-component/ProfilePageContainer";
 import Register from "./components/registration-component/RegistrationComponent.tsx";
 import LoginComponent from "./components/login-component/LoginContainer.tsx";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -20,7 +20,7 @@ function App() {
             <Route path="/main" component={MainPage} />
             <Route path="/Login" component={LoginComponent} />
             <Route path="/homeP" component={HomeP} />
-            <Route path="/profile" component={ProfileP} />
+            <Route path="/profile" component={ProfilePageComponent} />
             <Route path="/register" component={Register} />
           </Switch>
         </div>

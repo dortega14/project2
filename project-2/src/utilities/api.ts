@@ -6,16 +6,17 @@ import { IComment } from "../model/IComment";
 import IRegister from "../model/IRegister";
 import IUser from "../model/IUser";
 
-export const getPersonalList = (offset: number, limit: number, user: IUser) =>{
-    return axiosConfig.get("list.app?o=" + offset + "&l=" + limit + "&u=" + user.username);
+export const getPersonalList = (offset: number, limit: number, user: IUser) => {
+
+    return axiosConfig.get("postlist.app?o=" + offset + "&l=" + limit + "&u=" + user.id);
 }
 
 export const getList = (offset: number, limit: number) => {
-    return axiosConfg.get("list.app?o=" + offset + "&l=" + limit);
+    return axiosConfg.get("postlist.app?o=" + offset + "&l=" + limit);
 }
 
 export const publishPost = (body: IPost) => {
-    return axiosConfig.post('add.app',body);
+    return axiosConfig.post('newpost.app',body);
 }
 
 export const authenticateUser = async (username:string, password:string) => {
@@ -32,13 +33,13 @@ export const authenticateUser = async (username:string, password:string) => {
 }
 
 export const hitLike = (body: ILike) => {
-    return axiosConfig.post('like.app', body);
+    return axiosConfig.post('newlike.app', body);
 }
 
 export const postComment = (body: IComment) => {
-    return axiosConfig.post('cmnt.app', body);
+    return axiosConfig.post('newcomm.app', body);
 }
 
 export const regUser = (body: IRegister) => {
-    return axiosConfg.post('/newuser.app', body);
+    return axiosConfg.post('newuser.app', body);
 }

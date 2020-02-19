@@ -50,9 +50,12 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
                         <li>< NavLink className="mainLink" to={{
                             pathname: '/main'
                         }}>Home</ NavLink></li>
-                    <li><NavLink className="mainLink" to={{
+                        <li><NavLink className="mainLink" to={{
                             pathname: '/register'
                         }}>Register</NavLink></li>
+                        <li><NavLink className="mainLink" to={{
+                            pathname: '/profile'
+                        }}>My Profile</NavLink></li>
                     </ul>
                 </nav>
             </header>
