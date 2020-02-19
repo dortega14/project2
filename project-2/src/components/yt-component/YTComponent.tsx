@@ -6,7 +6,7 @@ export interface IYoutuber {
     youtubeLinks: IYoutube;
 }
 
-export class YouTubeComponent extends React.PureComponent<IYoutube> {
+export class YTComponent extends React.PureComponent<IYoutube> {
     render() {
         const opts = {
             height: '390',

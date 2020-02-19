@@ -1,6 +1,6 @@
 export interface IYoutube{
-    yt_id: number;
+    yt_id?: number;
     ytlink: string;
-    yt_post_id: number;
+    yt_post_id?: number;
     time: number;
 }

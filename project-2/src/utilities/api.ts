@@ -20,7 +20,6 @@ export const publishPost = (body: IPost) => {
 
 export const authenticateUser = async (username:string, password:string) => {
     let credentials:IUser = {
-        user_id: 0,
         username: username,
         password: password
     };

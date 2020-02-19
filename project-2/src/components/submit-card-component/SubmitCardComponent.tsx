@@ -6,33 +6,35 @@ import React from "react";
 export const SubmitCardComponent:React.FC<any> = (props:any)=>{
     const [image, setImage] = useState();
     const [ingredients, setIngredients] = useState("");
-    const [submitted, setSubmitted] = useState("");
+    const [postSubmitted, setPostSubmitted] = useState("");
     const [recipe, setRecipe] = useState("");
     const [title, setTitle] = useState("");
-    const [category_post_id, setCategory_post_id] = useState(0);
-    const [post_user_id, setPost_user_id] = useState(0);
+    const [postCategory, setPostCategory] = useState(0);
+    const [postUser, setPostUser] = useState(0);
+    const [postYtLink, setPostYtLink] = useState({ytLink: "", startTime: 0})
     return(
         <Form onSubmit={()=>publishPost({
-            post_id:0,
+            postId:0,
             image: image,
             ingredients: ingredients,
-            submitted: submitted,
+            postSubmitted: new Date(),
             recipe: recipe,
             title: title,
-            category_post_id: category_post_id,
-            post_user_id: post_user_id
+            postCategory: postCategory,
+            postUser: postUser,
+            postYtLink: {
+                ytlink: "",
+                time: 0
+            }
         }).then(r=>console.log(r.data))}>
             <Input type="text" placeholder="ingredients"
                 onChange={val=>setIngredients(val.target.value)}/>
             
-            <Input type="text" placeholder="submitted"
-                onChange={val=>setSubmitted(val.target.value)}/>
-            
             <Input type="text" placeholder="recipe"
-                onChange={val=>setSubmitted(val.target.value)}/>
+                onChange={val=>setRecipe(val.target.value)}/>
             
             <Input type="text" placeholder="title"
-                onChange={val=>setSubmitted(val.target.value)}/>
+                onChange={val=>setTitle(val.target.value)}/>
                 
             <Input type="submit" value="Post Recipe"/>
             

@@ -15,7 +15,7 @@ interface IPostState {
 interface IPostProps {
     user:IUser,
     allPosts: IPost[],
-    getAllPosts:(limit: number, offset: number) => void
+    getAllPosts:(limit: number, offset: number, user: IUser) => void
 }
 
 export class ProfilePageComponent extends React.Component<IPostProps, IPostState> {
@@ -30,14 +30,14 @@ export class ProfilePageComponent extends React.Component<IPostProps, IPostState
     async componentDidMount() {
         if (this.props.user) {
             if (this.props.allPosts.length === 0) {
-                this.props.getAllPosts(10, 0);
+                this.props.getAllPosts(10, 0, this.props.user);
             }
         }
     }
 
     pageTurnForward = () => {
         let newOffset = this.state.offset + this.state.limit;
-        this.props.getAllPosts(this.state.limit, newOffset);
+        this.props.getAllPosts(this.state.limit, newOffset, this.props.user);
         this.setState({
             ...this.state,
             offset: newOffset
@@ -46,7 +46,7 @@ export class ProfilePageComponent extends React.Component<IPostProps, IPostState
 
     pageTurnFirst = () => {
         let newOffset = 0;
-        this.props.getAllPosts(this.state.limit, newOffset);
+        this.props.getAllPosts(this.state.limit, newOffset, this.props.user);
         this.setState({
             ...this.state,
             offset: newOffset
@@ -56,7 +56,7 @@ export class ProfilePageComponent extends React.Component<IPostProps, IPostState
     pageTurnBack = () => {
         if (this.state.offset > 0) {
             let newOffset = this.state.offset - this.state.limit;
-            this.props.getAllPosts(this.state.limit, newOffset);
+            this.props.getAllPosts(this.state.limit, newOffset, this.props.user);
             this.setState({
                 ...this.state,
                 offset: newOffset

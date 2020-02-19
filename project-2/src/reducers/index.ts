@@ -1,17 +1,12 @@
 import { combineReducers } from 'redux';
 import { currUserReducer } from "./curr-user-reducer";
 import { IPost } from '../model/IPost';
+import IUser from '../model/IUser';
+import { postReducer } from './post-reducer';
 
 
 export interface ICurrUserState {
-    currUser: { 
-        id: number
-        username: string
-        password: string
-        firstName: string
-        lastName: string
-        email: string
-    },
+    currUser: IUser,
     loginMessage: string
 }
 

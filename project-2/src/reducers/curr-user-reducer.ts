@@ -28,6 +28,9 @@ export const currUserReducer = (state = intialState, action:any) => {
                 loginMessage:action.payload.loginMessage
             };
         }
+        case loginTypes.LOGOUT: {
+            return intialState;
+        }
         default:
             return state;
     }

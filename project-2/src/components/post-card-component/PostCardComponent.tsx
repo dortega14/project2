@@ -8,7 +8,7 @@ import {
   CardImg
 } from "reactstrap";
 import { IPost } from "../../model/IPost";
-import { YouTubeComponent } from "../youtube-component/YouTubeComponent"
+import { YTComponent } from "../yt-component/YTComponent"
 import { IYoutube } from "../../model/IYoutube";
 
 interface IPostProps {
@@ -17,17 +17,17 @@ interface IPostProps {
 
 export class PostCardComponent extends React.PureComponent<IPostProps> {
   render() {
-      const displayYoutube: YouTubeComponent = () => {
-          if (this.props.post.yt) {
+      /*const displayYoutube: YTComponent = () => {
+          if (this.props.post.postYtLink) {
               return (
-                <YouTubeComponent youtubeLinks={this.props.post.yt} />
+                <YTComponent youtubeLinks={this.props.post.postYtLink} />
               );
           }
-      }
+      }*/
     return (
       <>
         <Card>
-          <CardImg>{this.props.post.image}</CardImg>
+          <CardImg>{() => {if (this.props.post.image) return this.props.post.image}}</CardImg>
           <CardBody>
             <CardTitle>{this.props.post.title}</CardTitle>
             {/*Display category_name here*/}
@@ -38,6 +38,7 @@ export class PostCardComponent extends React.PureComponent<IPostProps> {
             <CardText>{this.props.post.postSubmitted}</CardText>
           </CardBody>
         </Card>
+        {/*displayYoutube*/}
       </>
     );
   }
