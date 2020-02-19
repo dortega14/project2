@@ -6,15 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.revature.model.Profile;
 import com.revature.service.ProfileService;
 
 @Controller
+@CrossOrigin(origins = "http://localhost:3000")
 public class ProfileController {
 
 	private ProfileService ps;
@@ -25,7 +28,7 @@ public class ProfileController {
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/proflist.app", produces = "application/json")
-	public ResponseEntity<List<Profile>> readAllProfiles(){
+	public @ResponseBody ResponseEntity<List<Profile>> readAllProfiles(){
 		return new ResponseEntity<>(ps.readAll(), HttpStatus.ACCEPTED);
 	}
 	

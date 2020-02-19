@@ -22,7 +22,7 @@ public class PostDao {
 	}
 
 	public List<Post> findAll() {
-		return sesfact.getCurrentSession().createQuery("from Post order by submitted", Post.class).list();
+		return sesfact.openSession().createQuery("from Post", Post.class).list();
 	}
 
 	public Post findById(int id) {

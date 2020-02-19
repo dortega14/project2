@@ -10,6 +10,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 @Entity
 @Table(name = "yt_links")
 public class YouTubeLink {
@@ -25,7 +28,7 @@ public class YouTubeLink {
 	@Column(name = "start_time")
 	private int startTime;
 
-	@OneToOne(mappedBy = "postYtLink", fetch = FetchType.LAZY)
+	@OneToOne(mappedBy = "postYtLink", fetch = FetchType.EAGER)
 	private Post ytPost;
 
 	public int getYouTubeId() {
@@ -52,6 +55,7 @@ public class YouTubeLink {
 		this.startTime = startTime;
 	}
 
+	@JsonIgnore
 	public Post getPost() {
 		return ytPost;
 	}

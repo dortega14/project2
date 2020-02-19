@@ -2,7 +2,6 @@ package com.revature.model;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -11,6 +10,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 @Table(name = "categories")
@@ -24,7 +26,8 @@ public class Category {
 	@Column(name = "category")
 	private String category;
 
-	@OneToMany(mappedBy = "postCategory",fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "postCategory",fetch = FetchType.EAGER)
+	@JsonIgnore
 	private Set<Post> categoryPost;
 
 	public int getCategoryId() {
@@ -71,7 +74,7 @@ public class Category {
 
 	@Override
 	public String toString() {
-		return "Category [categoryId=" + categoryId + ", category=" + category + "]";
+		return "Category [category=" + this.category + "]";
 	}
 
 }

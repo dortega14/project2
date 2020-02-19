@@ -12,6 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "like_types")
 public class LikeType {
@@ -24,7 +26,8 @@ public class LikeType {
 	@Column(name = "like_type")
 	private String likeType;
 
-	@OneToMany(mappedBy = "likeLikeType", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "likeLikeType", fetch = FetchType.EAGER)
+	@JsonIgnore
 	private Set<Like> likeTypeLike;
 
 	public int getLikeTypeId() {

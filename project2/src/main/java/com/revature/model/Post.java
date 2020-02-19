@@ -18,6 +18,9 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 @Entity
 @Table(name = "posts")
 public class Post {
@@ -43,22 +46,24 @@ public class Post {
 	@Column(name = "ingredients")
 	private String ingredients;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "post_category_id")
 	private Category postCategory;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "post_user_id")
 	private User postUser;
 
-	@OneToOne(fetch = FetchType.LAZY)
+	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "post_yt_id")
 	private YouTubeLink postYtLink;
 
-	@OneToMany(mappedBy = "commentPost", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "commentPost", fetch = FetchType.EAGER)
+	@JsonIgnore
 	private Set<Comment> postComment;
 
-	@OneToMany(mappedBy = "likePost", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "likePost", fetch = FetchType.EAGER)
+	@JsonIgnore
 	private Set<Like> postLike;
 
 	public int getPostId() {
@@ -159,7 +164,7 @@ public class Post {
 		this.postId = postId;
 	}
 
-	// with timestamp
+	// without timestamp
 	public Post(int postId, String title, Blob image, String recipe, String ingredients, Category postCategory,
 			User postUser) {
 		super();
@@ -172,7 +177,7 @@ public class Post {
 		this.postUser = postUser;
 	}
 
-	// without timestamp
+	// with timestamp
 	public Post(int postId, String title, Timestamp postSubmitted, Blob image, String recipe, String ingredients,
 			Category postCategory, User postUser) {
 		super();
@@ -187,7 +192,7 @@ public class Post {
 	}
 
 	public Post(int postId, String title, Blob image, String recipe, String ingredients, Category postCategory,
-			User postUser, YouTubeLink postYtLink, Set<Comment> postComment, Set<Like> postLike) {
+			User postUser, YouTubeLink postYtLink) {
 		super();
 		this.postId = postId;
 		this.title = title;
@@ -197,14 +202,13 @@ public class Post {
 		this.postCategory = postCategory;
 		this.postUser = postUser;
 		this.postYtLink = postYtLink;
-		this.postComment = postComment;
-		this.postLike = postLike;
 	}
 
 	@Override
 	public String toString() {
-		return "Post [postId=" + postId + ", title=" + title + ", image=" + image + ", recipe=" + recipe
-				+ ", ingredients=" + ingredients + ", postCategory=" + postCategory + ", postUser=" + postUser + "]";
+		return "Post [postId=" + postId + ", title=" + title + ", postSubmitted=" + postSubmitted + ", image=" + image
+				+ ", recipe=" + recipe + ", ingredients=" + ingredients + ", postCategory=" + postCategory
+				+ ", postUser=" + postUser + ", postYtLink=" + postYtLink + "]";
 	}
 
 }

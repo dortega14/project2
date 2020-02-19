@@ -21,15 +21,15 @@ public class Like {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int likeId;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "like_like_type_id")
 	private LikeType likeLikeType;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "like_post_id")
 	private Post likePost;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "like_user_id")
 	private User likeUser;
 

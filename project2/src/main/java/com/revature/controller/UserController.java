@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.revature.model.User;
 import com.revature.service.UserService;
@@ -29,7 +30,7 @@ public class UserController {
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/userlist.app", produces = "application/json")
-	public ResponseEntity<List<User>> getAllUsersAsList() {
+	public @ResponseBody ResponseEntity<List<User>> getAllUsersAsList() {
 		return new ResponseEntity<>(us.readAll(), HttpStatus.ACCEPTED);
 	}
 

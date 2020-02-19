@@ -3155,3 +3155,111 @@ Caused by: org.postgresql.util.PSQLException: ERROR: constraint "fk5l7rf6rh6vygk
 2020-02-17 21:36:42 INFO  Log4j:32 - insert method in the Dao has ran.
 2020-02-17 21:36:42 INFO  Log4j:32 - insert method in the Dao has ran.
 2020-02-17 21:36:42 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 16:33:35 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 16:33:36 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 16:33:39 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 16:33:50 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 16:33:52 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 16:33:57 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 16:33:57 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 16:37:16 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 16:37:17 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 16:37:19 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 16:37:26 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 16:37:29 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 16:37:33 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 16:37:33 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 16:37:34 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 16:37:34 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 16:37:34 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 16:37:34 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 16:37:35 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 16:37:35 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:07:07 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:07:07 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:07:10 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:07:18 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:07:20 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:07:25 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:07:25 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:07:26 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:07:26 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:07:26 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:07:26 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:07:27 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:07:27 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:02 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:22:03 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:22:07 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:22:16 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:22:22 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:22:35 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:35 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:35 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:35 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:36 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:36 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:36 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:36 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:37 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:37 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:38 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:22:38 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:24:42 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:24:44 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:24:49 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:24:58 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:25:02 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:25:09 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:25:09 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:25:10 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:25:10 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:25:10 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:25:10 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:27:12 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:27:14 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:27:17 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:27:26 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:27:30 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:27:37 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:27:37 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:27:38 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:27:38 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:27:38 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:27:38 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:27:39 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:27:39 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:28:46 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:28:47 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:28:52 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:29:01 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:29:04 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:29:14 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:29:14 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:32:08 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:32:09 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:32:13 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:32:21 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:32:24 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:32:30 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:32:30 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:33:04 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:33:05 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:33:10 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:33:19 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:33:23 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:33:33 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:33:33 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:34:21 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-18 22:34:22 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-18 22:34:28 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-02-18 22:34:38 INFO  Version:21 - HV000001: Hibernate Validator 6.0.17.Final
+2020-02-18 22:34:43 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-18 22:34:51 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:34:51 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:34:52 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:34:52 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:34:52 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:34:52 INFO  Log4j:22 - findById method in the Dao has ran.
+2020-02-18 22:34:53 INFO  Log4j:32 - insert method in the Dao has ran.
+2020-02-18 22:34:53 INFO  Log4j:32 - insert method in the Dao has ran.

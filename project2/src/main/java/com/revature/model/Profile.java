@@ -28,7 +28,7 @@ public class Profile {
 	@Column(name = "cover_image")
 	private Blob coverImage;
 
-	@OneToOne(fetch = FetchType.LAZY)
+	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "profile_user_id")
 	private User profileUser;
 

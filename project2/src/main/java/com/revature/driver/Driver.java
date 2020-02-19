@@ -7,6 +7,7 @@ import com.revature.model.Category;
 import com.revature.model.LikeType;
 import com.revature.model.Post;
 import com.revature.model.User;
+import com.revature.model.YouTubeLink;
 import com.revature.service.CategoryService;
 import com.revature.service.LikeTypeService;
 import com.revature.service.PostService;
@@ -25,14 +26,15 @@ public class Driver {
 
 	public static void main(String[] args) {
 
-		initializeCategory();
-		initializeLikeType();
+//		initializeCategory();
+//		initializeLikeType();
 //		initializeUser();
-//		initializePost();
+		initializePost();
 //		deleteUser();
 //		viewAllUsers();
 //		findUserByUsername();
 //		initializePostWithYtLink();
+//		initializeYtLink();
 	}
 
 	private static void initializeCategory() {
@@ -57,7 +59,7 @@ public class Driver {
 //		ps.insert(new Post(0, "Fajitas", null, "Cook", "ingredients", cs.findById(2),
 //				us.findById(1)));
 		ps.insert(new Post(0, "Tacos", null, "Cook the dang thing", "tortilla, meat, cheese", cs.findById(2),
-				us.findById(1)));
+				us.findById(1), ytls.findById(2)));
 	}
 
 	private static void initializePostWithYtLink() {
@@ -71,6 +73,10 @@ public class Driver {
 
 	private static void viewAllUsers() {
 		System.out.println(us.readAll());
+	}
+	
+	private static void initializeYtLink() {
+		ytls.insert(new YouTubeLink(0, "http://youtube.com/watch?v=jJ2qlKLYKxc&t=54", 54));
 	}
 
 }

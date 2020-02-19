@@ -2,7 +2,6 @@ package com.revature.model;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -13,6 +12,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -21,29 +22,36 @@ public class User {
 	@Column(name = "user_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int userId;
-	
+
 	@Column(name = "username", unique = true)
-	private String username; 
-	
+	private String username;
+
 	@Column(name = "password")
-	private String password; 
-	
+	private String password;
+
 	@Column(name = "first_name")
-	private String firstName; 
-	
+	private String firstName;
+
 	@Column(name = "last_name")
-	private String lastName; 
-	
+	private String lastName;
+
 	@Column(name = "email")
 	private String email;
-	
-	@OneToOne(mappedBy = "profileUser", fetch = FetchType.LAZY)
+
+	@OneToOne(mappedBy = "profileUser", fetch = FetchType.EAGER)
+	@JsonIgnore
 	private Profile profile;
 
-	@OneToMany(mappedBy = "commentUser", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "postUser", fetch = FetchType.EAGER)
+	@JsonIgnore
+	private Set<Post> userPost;
+
+	@OneToMany(mappedBy = "commentUser", fetch = FetchType.EAGER)
+	@JsonIgnore
 	private Set<Comment> userComment;
-	
-	@OneToMany(mappedBy = "likeUser", fetch = FetchType.LAZY)
+
+	@OneToMany(mappedBy = "likeUser", fetch = FetchType.EAGER)
+	@JsonIgnore
 	private Set<Like> userLike;
 
 	public int getUserId() {
@@ -94,6 +102,38 @@ public class User {
 		this.email = email;
 	}
 
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
+	}
+
+	public Set<Post> getUserPost() {
+		return userPost;
+	}
+
+	public void setUserPost(Set<Post> userPost) {
+		this.userPost = userPost;
+	}
+
+	public Set<Comment> getUserComment() {
+		return userComment;
+	}
+
+	public void setUserComment(Set<Comment> userComment) {
+		this.userComment = userComment;
+	}
+
+	public Set<Like> getUserLike() {
+		return userLike;
+	}
+
+	public void setUserLike(Set<Like> userLike) {
+		this.userLike = userLike;
+	}
+
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -128,6 +168,5 @@ public class User {
 		return "User [userId=" + userId + ", username=" + username + ", password=" + password + ", firstName="
 				+ firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
-	
-	
+
 }
