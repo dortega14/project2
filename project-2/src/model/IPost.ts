@@ -1,3 +1,5 @@
+import { IYoutube } from "./IYoutube";
+
 export interface IPost {
     postId: number;
     title: string;
@@ -7,5 +9,5 @@ export interface IPost {
     ingredients: string;
     postCategory: number;
     postUser: number;
-
+    postYtLink: IYoutube
 }
