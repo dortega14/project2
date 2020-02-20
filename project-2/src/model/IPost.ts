@@ -7,7 +7,7 @@ export interface IPost {
     postId: number,
     title: string,
     postSubmitted: Date,
-    image: any,
+    image?: any,
     recipe: string,
     ingredients: string,
     postCategory: ICategory,
