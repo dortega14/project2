@@ -110,6 +110,12 @@
 			<version>5.2.2.RELEASE</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.11.725</version>
+		</dependency>
+
 	</dependencies>
 
 </project>

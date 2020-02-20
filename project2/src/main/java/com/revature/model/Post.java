@@ -59,11 +59,9 @@ public class Post {
 	private YouTubeLink postYtLink;
 
 	@OneToMany(mappedBy = "commentPost", fetch = FetchType.EAGER)
-	@JsonIgnore
 	private Set<Comment> postComment;
 
 	@OneToMany(mappedBy = "likePost", fetch = FetchType.EAGER)
-	@JsonIgnore
 	private Set<Like> postLike;
 
 	public int getPostId() {

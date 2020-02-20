@@ -30,6 +30,10 @@ public class PostService {
 		return pd.findAll();
 	}
 	
+	public List<Post> tenPosts(int offset, int limit, int id) {
+		return pd.tenPosts(offset, limit, id);
+	}
+	
 	public Post findById(int id) {
 		return pd.findById(id);
 	}
@@ -44,5 +48,9 @@ public class PostService {
 	
 	public void delete(Post post) {
 		pd.delete(post);
+	}
+	
+	public List<Post> findByUser(int id) {
+		return pd.findByUser(id);
 	}
 }

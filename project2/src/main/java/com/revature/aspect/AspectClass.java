@@ -8,6 +8,16 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 
+/**
+ * 
+ * @author TeamLeo
+ * <br>
+ * <br>
+ * The AspectClass is responsible for dealing with cross cut concerns.
+ * <br>
+ * Primarily when implementing the logger, the aspect class uses Advice methods in order to identify point cuts and 
+ * implement the logger when the c
+ */
 @Component
 @Aspect
 public class AspectClass {

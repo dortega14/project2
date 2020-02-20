@@ -1,6 +1,5 @@
 package com.revature.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -10,6 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "comments")
@@ -25,10 +26,12 @@ public class Comment {
 
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "comment_post_id")
+	@JsonIgnore
 	private Post commentPost;
 
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "comment_user_id")
+	@JsonIgnore
 	private User commentUser;
 
 	public int getCommentId() {
