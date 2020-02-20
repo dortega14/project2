@@ -20,7 +20,7 @@ export const SubmitCardComponent:React.FC<any> = (props:any)=>{
             postSubmitted: new Date(),
             recipe: recipe,
             title: title,
-            postCategory: postCategory,
+            postCategory: {categoryId: postCategory},
             postUser: postUser,
             postYtLink: {
                 ytlink: "",

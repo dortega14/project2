@@ -5,7 +5,9 @@ import {
   CardText,
   CardSubtitle,
   CardTitle,
-  CardImg
+  CardImg,
+  Button,
+  ButtonGroup
 } from "reactstrap";
 import { IPost } from "../../model/IPost";
 import { YTComponent } from "../yt-component/YTComponent"
@@ -14,30 +16,33 @@ import { IYoutube } from "../../model/IYoutube";
 interface IPostProps {
   post: IPost;
 }
+
 export class PostCardComponent extends React.PureComponent<IPostProps> {
+
+    cardTextBuilder() {
+        return `Ingredients:  ${this.props.post.ingredients}\n
+            Recipe:  ${this.props.post.recipe}\n
+            Submitted on: ${this.props.post.postSubmitted}`
+    }
+
   render() {
-      /*const displayYoutube: YTComponent = () => {
-          if (this.props.post.postYtLink) {
-              return (
-                <YTComponent youtubeLinks={this.props.post.postYtLink} />
-              );
-          }
-      }*/
+
     return (
       <>
         <Card>
+          {/*<CardImg>{() => this.props.post.image && this.props.post.image}</CardImg>*/}
           <CardBody>
-          <CardImg></CardImg>
-            <CardTitle>{() => {if (this.props.post.title) return this.props.post.title}}</CardTitle>
-            {/*Display category_name here*/}
-            <CardSubtitle>{() => {if (this.props.post.postCategory) return this.props.post.postCategory}}</CardSubtitle>
-            {/*Multiple Cardtexts to be tested if it works*/}
-            <CardText>this.props.post.ingredients</CardText>
-            <CardText>{() => {if (this.props.post.recipe) return this.props.post.recipe}}</CardText>
-            <CardText>{() => {if (this.props.post.postSubmitted) return this.props.post.postSubmitted}}</CardText>
+            <CardTitle>{this.props.post.title}</CardTitle>
+            <CardSubtitle>{this.props.post.postCategory.category}</CardSubtitle>
+            <CardText>{this.cardTextBuilder()}</CardText>
           </CardBody>
         </Card>
-        {/*displayYoutube*/}
+        {this.props.post.postYtLink && <YTComponent youtubeLinks={this.props.post.postYtLink}/>}
+        <ButtonGroup>
+            <Button color="success">Tasty</Button>
+            <Button color="warning">Looks Good</Button>
+            <Button color="danger">Needs Salt</Button>
+        </ButtonGroup>
       </>
     );
   }

@@ -1,4 +1,6 @@
 import { IYoutube } from "./IYoutube";
+import { ICategory } from "./ICategory";
+import IUser from "./IUser";
 
 export interface IPost {
     postId: number;
@@ -7,7 +9,7 @@ export interface IPost {
     image: any;
     recipe: string;
     ingredients: string;
-    postCategory: number;
+    postCategory: ICategory;
     postUser: number;
-    postYtLink: IYoutube
+    postYtLink?: IYoutube
 }

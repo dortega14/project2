@@ -37,7 +37,7 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
     }
 
     submitLogin = async (event: SyntheticEvent) => {
-        event.preventDefault()
+        event.preventDefault();
         this.props.updateCurrentUser(this.state.username, this.state.password);
     }
 
@@ -55,7 +55,7 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
                         }}>Register</NavLink></li>
                         <li><NavLink className="mainLink" to={{
                             pathname: '/profile'
-                        }}>My Profile</NavLink></li>
+                        }}>Profile</NavLink></li>
                     </ul>
                 </nav>
             </header>
