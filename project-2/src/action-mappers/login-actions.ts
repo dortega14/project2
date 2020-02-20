@@ -13,6 +13,7 @@ export const updateCurrentUser = (username:string, password:string) =>
     let response:any = await authenticateUser(username, password);
     //console.log(response.data);
     switch (response.status) {
+        case 200:
         case 202:
             dispatch({
                 type:loginTypes.LOGIN_SUCCESS,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { SyntheticEvent } from "react";
 import {
   CardBody,
   Card,
@@ -7,42 +7,84 @@ import {
   CardTitle,
   CardImg,
   Button,
-  ButtonGroup
+  ButtonGroup,
+  Form,
+  Input,
+  Row
 } from "reactstrap";
 import { IPost } from "../../model/IPost";
-import { YTComponent } from "../yt-component/YTComponent"
+import { YTComponent } from "../yt-component/YTComponent";
 import { IYoutube } from "../../model/IYoutube";
+import IUser from "../../model/IUser";
+import { hitLike } from "../../utilities/api";
+import { ILike } from "../../model/ILike";
 
 interface IPostProps {
-  post: IPost;
+  post: IPost,
+  currUser: IUser,
+  parent: string
 }
 
 export class PostCardComponent extends React.PureComponent<IPostProps> {
-
-    cardTextBuilder() {
-        return `Ingredients:  ${this.props.post.ingredients}\n
+  cardTextBuilder() {
+    return `Ingredients:  ${this.props.post.ingredients}\n
             Recipe:  ${this.props.post.recipe}\n
-            Submitted on: ${this.props.post.postSubmitted}`
+            Submitted on: ${this.props.post.postSubmitted}`;
+  }
+
+  submitComment(event:SyntheticEvent) {
+    event.preventDefault();
+    console.log("submitted comment");
+  }
+
+  submitLike(type:number) {
+    let like:ILike = {
+      likeUser: this.props.currUser.username,
+      likePost: this.props.post.postId,
+      likeLikeType: type
     }
+    hitLike(like);
+  }
 
   render() {
-
     return (
       <>
-        <Card>
-          {/*<CardImg>{() => this.props.post.image && this.props.post.image}</CardImg>*/}
-          <CardBody>
-            <CardTitle>{this.props.post.title}</CardTitle>
-            <CardSubtitle>{this.props.post.postCategory.category}</CardSubtitle>
-            <CardText>{this.cardTextBuilder()}</CardText>
-          </CardBody>
-        </Card>
-        {this.props.post.postYtLink && <YTComponent youtubeLinks={this.props.post.postYtLink}/>}
-        <ButtonGroup>
-            <Button color="success">Tasty</Button>
-            <Button color="warning">Looks Good</Button>
-            <Button color="danger">Needs Salt</Button>
-        </ButtonGroup>
+        <Row>
+          <Card>
+            {/*<CardImg>{() => this.props.post.image && this.props.post.image}</CardImg>*/}
+            <CardBody>
+              <CardTitle>{this.props.post.title}</CardTitle>
+              <CardSubtitle>
+                {this.props.post.postCategory.category}
+              </CardSubtitle>
+              <CardText>{this.cardTextBuilder()}</CardText>
+            </CardBody>
+          </Card>
+        </Row>
+        <Row>
+          <ButtonGroup>
+            <Button color="success" onClick={() => this.submitLike(1)}>Tasty</Button>
+            <Button color="warning" onClick={() => this.submitLike(2)}>Looks Good</Button>
+            <Button color="danger" onClick={() => this.submitLike(3)}>Needs Salt</Button>
+          </ButtonGroup>
+        </Row>
+        <Row>
+          {this.props.post.postComment}
+        </Row>
+        <Row>
+          <Form onSubmit={this.submitComment}>
+            <Input
+              type="textarea"
+              placeholder="What do you think about this dish?"
+            />
+            <Input type="submit" value="Leave Comment" />
+          </Form>
+        </Row>
+        <Row>
+          {this.props.post.postYtLink && (
+            <YTComponent youtubeLinks={this.props.post.postYtLink} />
+          )}
+        </Row>
       </>
     );
   }
