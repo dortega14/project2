@@ -8,21 +8,20 @@ interface ISubmitProps {
     currUser: IUser
 }
 
-export const SubmitCardComponent:React.FC<any> = (props:ISubmitProps)=>{
-    const [image, setImage] = useState();
-    const [ingredients, setIngredients] = useState("");
-    const [postSubmitted, setPostSubmitted] = useState("");
-    const [recipe, setRecipe] = useState("");
-    const [title, setTitle] = useState("");
-    const [postCategory, setPostCategory] = useState(0);
-    const [postUser, setPostUser] = useState(props.currUser);
-    const [postYtLink, setPostYtLink] = useState({ytLink: "", startTime: 0})
+interface ISubmitState {
+    image: any,
+    ingredients: string,
+    recipe: string,
+    title: string,
+    category: number
+}
+
+export class SubmitCardComponent extends React.Component<ISubmitProps, ISubmitState>{
+    render() {
     return(
         <Form onSubmit={()=>publishPost({
-            postId:0,
             image: image,
             ingredients: ingredients,
-            postSubmitted: new Date(),
             recipe: recipe,
             title: title,
             postCategory: {categoryId: postCategory},
@@ -45,5 +44,5 @@ export const SubmitCardComponent:React.FC<any> = (props:ISubmitProps)=>{
             
         </Form>
     )
+    }
 }
-export default SubmitCardComponent;
