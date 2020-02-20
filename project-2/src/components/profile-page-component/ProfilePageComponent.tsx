@@ -9,13 +9,17 @@ import {
   CardColumns,
   Pagination,
   PaginationItem,
-  PaginationLink
+  PaginationLink,
+  Button,
+  Collapse
 } from "reactstrap";
 import { postComment } from "../../utilities/api";
+import SubmitCardComponent from "../submit-card-component/SubmitCardComponent";
 
 interface IPostState {
   limit: number;
   offset: number;
+  toggle: boolean
 }
 
 interface IPostProps {
@@ -33,7 +37,8 @@ export class ProfilePageComponent extends React.Component<
     super(props);
     this.state = {
       limit: 10,
-      offset: 0
+      offset: 0,
+      toggle: false
     };
   }
 
@@ -74,6 +79,13 @@ export class ProfilePageComponent extends React.Component<
     }
   };
 
+  toggleSubmitCard = () => {
+    this.setState({
+      ...this.state,
+      toggle: !this.state.toggle
+    })
+  }
+
   render() {
     if (this.props.user.username) {
       return (
@@ -82,37 +94,34 @@ export class ProfilePageComponent extends React.Component<
             <nav>
               <ul>
                 <li>
-                  <NavLink
-                    to={{
-                      pathname: "/home"
-                    }}
-                  >
+                  <NavLink to={{pathname: "/home"}}>
                     Home
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink
-                    to={{
-                      pathname: "/register"
-                    }}
-                  >
+                    to={{pathname: "/register"}}>
                     Settings
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
-                    to={{
-                      pathname: "/"
-                    }}
-                    onClick={this.props.logout}
-                  >
+                    to={{pathname: "/"}} 
+                    onClick={this.props.logout}>
                     Logout
                   </NavLink>
                 </li>
               </ul>
             </nav>
           </header>
+          <br/>
+          <div>
+            <Button color="primary" onClick={this.toggleSubmitCard}>Add post</Button>
+            <Collapse isOpen={this.state.toggle}>
+              <SubmitCardComponent></SubmitCardComponent>
+            </Collapse>
+          </div>
           <div>
             <CardColumns>
               {this.props.allPosts[0] && (

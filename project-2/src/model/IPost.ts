@@ -12,6 +12,6 @@ export interface IPost {
     ingredients: string,
     postCategory: ICategory,
     postComment?: IComment[],
-    postUser: number,
+    postUser: IUser,
     postYtLink?: IYoutube
 }

@@ -8,9 +8,10 @@ import IUser from "../model/IUser";
 
 export const getPersonalList = (offset: number, limit: number, user: IUser) =>{
     //return axiosConfig.get("list.app?o=" + offset + "&l=" + limit + "&u=" + user.id);
-
+    console.log(user);
+    return axiosConfg.get("post" + user.userId + ".app");
     //return axios.get('https://api.myjson.com/bins/vpwds');
-    return axios.get('https://api.myjson.com/bins/1bxro8');
+    //return axios.get('https://api.myjson.com/bins/1bxro8');
 }
 
 export const getList = (offset: number, limit: number) => {
@@ -18,7 +19,7 @@ export const getList = (offset: number, limit: number) => {
 }
 
 export const publishPost = (body: IPost) => {
-    return axiosConfig.post('add.app',body);
+    return axiosConfig.post('newpost.app',body);
 }
 
 export const authenticateUser = async (username:string, password:string) => {
@@ -27,9 +28,9 @@ export const authenticateUser = async (username:string, password:string) => {
         password: password
     };
 
-    let response = await axios.get('https://api.myjson.com/bins/6amgk'/*, credentials*/);
+    //let response = await axios.get('https://api.myjson.com/bins/6amgk'/*, credentials*/);
 
-    //let response = await axiosConfg.post('login.app', credentials)
+    let response = await axiosConfg.post('login.app', credentials)
     console.log(response);
     return response;
 }

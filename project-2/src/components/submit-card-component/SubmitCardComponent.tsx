@@ -2,15 +2,20 @@ import { useState } from "react";
 import { Form, Input } from "reactstrap";
 import { publishPost } from "../../utilities/api";
 import React from "react";
+import IUser from "../../model/IUser";
 
-export const SubmitCardComponent:React.FC<any> = (props:any)=>{
+interface ISubmitProps {
+    currUser: IUser
+}
+
+export const SubmitCardComponent:React.FC<any> = (props:ISubmitProps)=>{
     const [image, setImage] = useState();
     const [ingredients, setIngredients] = useState("");
     const [postSubmitted, setPostSubmitted] = useState("");
     const [recipe, setRecipe] = useState("");
     const [title, setTitle] = useState("");
     const [postCategory, setPostCategory] = useState(0);
-    const [postUser, setPostUser] = useState(0);
+    const [postUser, setPostUser] = useState(props.currUser);
     const [postYtLink, setPostYtLink] = useState({ytLink: "", startTime: 0})
     return(
         <Form onSubmit={()=>publishPost({

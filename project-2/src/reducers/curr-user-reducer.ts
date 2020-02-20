@@ -3,7 +3,7 @@ import { loginTypes } from "../action-mappers/login-actions";
 
 const intialState:ICurrUserState = {
     currUser: {
-        id: 0,
+        userId: 0,
         username: "",
         password: "",
         firstName: "",

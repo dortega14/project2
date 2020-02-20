@@ -27,9 +27,9 @@ interface IPostProps {
 
 export class PostCardComponent extends React.PureComponent<IPostProps> {
   cardTextBuilder() {
-    return `Ingredients:  ${this.props.post.ingredients}\n
-            Recipe:  ${this.props.post.recipe}\n
-            Submitted on: ${this.props.post.postSubmitted}`;
+    return `Ingredients:  ${this.props.post.ingredients}\n\r
+            Recipe:  ${this.props.post.recipe}\n\r
+            Submitted on: ${new Date(this.props.post.postSubmitted)} by ${this.props.post.postUser.firstName}`;
   }
 
   submitComment(event:SyntheticEvent) {
