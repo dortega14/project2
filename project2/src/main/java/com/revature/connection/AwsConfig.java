@@ -13,8 +13,8 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 public class AwsConfig {
 	
 	private AWSCredentials cred;
-    private String accessKey = "AKIAUPQUDQ7AYSR2OAIV"; 
-    private String secretKey = "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";
+    private String accessKey = ""; 
+    private String secretKey = "";
     private AmazonS3 s3;
     private String bucketName = "socialmediap2";
 	
