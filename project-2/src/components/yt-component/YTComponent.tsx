@@ -6,19 +6,19 @@ export interface IYoutuber {
     youtubeLinks: IYoutube;
 }
 
-export class YTComponent extends React.PureComponent<IYoutube> {
+export class YTComponent extends React.PureComponent<IYoutuber> {
     render() {
         const opts = {
             height: '390',
             width: '640',
             playerVars: { // https://developers.google.com/youtube/player_parameters
-              start: this.props.time
+              start: this.props.youtubeLinks.time
             }
           };
         return (
             <>
                 <YouTube 
-                    videoId={this.props.ytlink}
+                    videoId={this.props.youtubeLinks.ytlink}
                     opts={opts}
                 />
             </>

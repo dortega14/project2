@@ -1,5 +1,5 @@
 import React, {  SyntheticEvent } from 'react';
-import '../../scss/Main.scss'
+import '../../css/Main.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import {NavLink} from 'react-router-dom';
 
@@ -37,7 +37,7 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
     }
 
     submitLogin = async (event: SyntheticEvent) => {
-        event.preventDefault()
+        event.preventDefault();
         this.props.updateCurrentUser(this.state.username, this.state.password);
     }
 
@@ -50,9 +50,12 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
                         <li>< NavLink className="mainLink" to={{
                             pathname: '/main'
                         }}>Home</ NavLink></li>
-                    <li><NavLink className="mainLink" to={{
+                        <li><NavLink className="mainLink" to={{
                             pathname: '/register'
                         }}>Register</NavLink></li>
+                        <li><NavLink className="mainLink" to={{
+                            pathname: '/profile'
+                        }}>Profile</NavLink></li>
                     </ul>
                 </nav>
             </header>

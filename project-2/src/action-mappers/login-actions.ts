@@ -13,6 +13,7 @@ export const updateCurrentUser = (username:string, password:string) =>
     let response:any = await authenticateUser(username, password);
     //console.log(response.data);
     switch (response.status) {
+        case 200:
         case 202:
             dispatch({
                 type:loginTypes.LOGIN_SUCCESS,
@@ -27,7 +28,15 @@ export const updateCurrentUser = (username:string, password:string) =>
                 payload: {
                     loginMessege:response.status + " login failed!"
                 }
-            })
+            });
     }
+}
 
+export const logout = () => (dispatch:any) => {
+    dispatch({
+        type:loginTypes.LOGOUT,
+        payload:{
+            loginMessege:"logged out!"
+        }
+    });
 }

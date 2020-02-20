@@ -1,5 +1,5 @@
 import  axiosConfig, { axiosConfg }  from "./axiosConfig";
-//import axios from "axios";
+import axios from "axios";
 import { IPost } from "../model/IPost";
 import { ILike } from "../model/ILike";
 import { IComment } from "../model/IComment";
@@ -7,7 +7,11 @@ import IRegister from "../model/IRegister";
 import IUser from "../model/IUser";
 
 export const getPersonalList = (offset: number, limit: number, user: IUser) =>{
-    return axiosConfig.get("list.app?o=" + offset + "&l=" + limit + "&u=" + user.username);
+    //return axiosConfig.get("list.app?o=" + offset + "&l=" + limit + "&u=" + user.id);
+    console.log(user);
+    return axiosConfg.get("post" + user.userId + ".app");
+    //return axios.get('https://api.myjson.com/bins/vpwds');
+    //return axios.get('https://api.myjson.com/bins/1bxro8');
 }
 
 export const getList = (offset: number, limit: number) => {
@@ -15,7 +19,7 @@ export const getList = (offset: number, limit: number) => {
 }
 
 export const publishPost = (body: IPost) => {
-    return axiosConfig.post('add.app',body);
+    return axiosConfig.post('newpost.app',body);
 }
 
 export const authenticateUser = async (username:string, password:string) => {

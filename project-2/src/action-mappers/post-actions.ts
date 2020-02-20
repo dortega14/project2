@@ -14,7 +14,7 @@ export const getAllPosts = (limit: number, offset: number, currUser: IUser) => a
         dispatch({
             type: postTypes.SUCCESSFUL_GET_PAGE_POSTS,
             payload:{
-                allPosts: posts
+                allPosts: posts.data
             }
         });
     } catch (e) {
