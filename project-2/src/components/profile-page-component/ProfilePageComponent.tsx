@@ -86,8 +86,13 @@ export class ProfilePageComponent extends React.Component<
     })
   }
 
+  
+
   render() {
     if (this.props.user.username) {
+      const displayList: any[] = this.props.allPosts.map<any>((post: any) => {
+        return <><PostCardComponent post={post} currUser={this.props.user} parent="pp" key={post.postId}/><br/></>
+      })
       return (
         <div className="MainButtons">
           <header>
@@ -96,13 +101,6 @@ export class ProfilePageComponent extends React.Component<
                 <li>
                   <NavLink to={{pathname: "/home"}}>
                     Home
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    to={{pathname: "/register"}}>
-                    Settings
                   </NavLink>
                 </li>
                 <li>
@@ -123,78 +121,11 @@ export class ProfilePageComponent extends React.Component<
             </Collapse>
           </div>
           <div>
-            <CardColumns>
-              {this.props.allPosts[0] && (
-                <PostCardComponent
-                  post={this.props.allPosts[0]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[1] && (
-                <PostCardComponent
-                  post={this.props.allPosts[1]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[2] && (
-                <PostCardComponent
-                  post={this.props.allPosts[2]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[3] && (
-                <PostCardComponent
-                  post={this.props.allPosts[3]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[4] && (
-                <PostCardComponent
-                  post={this.props.allPosts[4]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[5] && (
-                <PostCardComponent
-                  post={this.props.allPosts[5]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[6] && (
-                <PostCardComponent
-                  post={this.props.allPosts[6]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[7] && (
-                <PostCardComponent
-                  post={this.props.allPosts[7]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[8] && (
-                <PostCardComponent
-                  post={this.props.allPosts[8]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-              {this.props.allPosts[9] && (
-                <PostCardComponent
-                  post={this.props.allPosts[9]}
-                  currUser={this.props.user}
-                  parent="pp"
-                />
-              )}
-            </CardColumns>
+              
+
+              {displayList /*()=>{for(let post of this.props.allPosts) return <PostCardComponent post={post} currUser={this.props.user} parent="pp"/>}*/}
+              </div>
+              <div>
             <Pagination aria-label="Page navigation example">
               <PaginationItem disabled>
                 <PaginationLink first onClick={this.pageTurnFirst} />

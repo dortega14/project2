@@ -8,6 +8,8 @@ import LoginComponent from "./components/login-component/LoginContainer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { store } from "./Store";
 import { Provider } from "react-redux";
+import { ResetPasswordComponent } from "./components/reset-password-component/ResetPasswordComponent";
+import { ForgotPasswordComponent } from "./components/forgot-password-component/ForgotPasswordComponent";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/home" component={HomePageComponent} />
             <Route path="/profile" component={ProfilePageComponent} />
             <Route path="/register" component={Register} />
+            <Route path="/resetpassword" component={ResetPasswordComponent} />
+            <Route path="/forgot" component={ForgotPasswordComponent} />
           </Switch>
         </div>
       </BrowserRouter>

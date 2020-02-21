@@ -2,6 +2,7 @@ import React, {  SyntheticEvent } from 'react';
 import '../../css/Main.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import {NavLink} from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 interface ILoginState {
     username: string,
@@ -47,8 +48,9 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
             <header className="MainButtons">
                 <nav >
                     <ul className="LinkElements">
+                        <li><NavLink className="mainLink" to={{pathname:'/main'}}>Main</NavLink></li>
                         <li>< NavLink className="mainLink" to={{
-                            pathname: '/main'
+                            pathname: '/home'
                         }}>Home</ NavLink></li>
                         <li><NavLink className="mainLink" to={{
                             pathname: '/register'
@@ -79,6 +81,7 @@ export class LoginComponent extends React.Component<ILoginProps, ILoginState>{
                         </div>
                     </div>
                 </form>
+                <NavLink to={{pathname: '/forgot'}}>Forgot password?</NavLink>
                 <p>{this.props.loginMessage}</p>
             </div>
             </div>

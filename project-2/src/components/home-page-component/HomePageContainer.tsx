@@ -9,7 +9,7 @@ import { HomePageComponent } from "./HomePageComponent";
 const mapStateToProps = (state: IState) => {
     return {
         user: state.CurrUserState.currUser,
-        allPosts: state.PostState.allPosts
+        allPosts: state.MainPostState.allPosts
     };
 }
 

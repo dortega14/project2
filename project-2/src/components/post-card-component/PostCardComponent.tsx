@@ -94,9 +94,9 @@ export class PostCardComponent extends React.Component<IPostProps, IPostState> {
             <Button color="danger" onClick={() => this.submitLike(3)}>Needs Salt</Button>
           </ButtonGroup>
         </Row>
-        <Row>
+        {/*<Row>
           {this.props.post.postComment}
-        </Row>
+        </Row>*/}
         <Row>
           <Form onSubmit={this.submitComment}>
             <Input

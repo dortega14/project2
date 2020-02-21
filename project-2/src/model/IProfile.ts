@@ -1,6 +1,8 @@
+import IUser from "./IUser";
+
 export interface IProfile {
-    profile_id: number;
+    profileId: number;
     bio: string;
-    cover_image: any;
-    profile_user_id: number;
+    coverImage?: any;
+    profileUser: IUser;
 }

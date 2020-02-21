@@ -103,7 +103,7 @@ export class SubmitCardComponent extends React.Component<ISubmitProps, ISubmitSt
                 <option value={3}>Dinner</option>
             </Input>
 
-            <Input type="file" onChange={this.updateImage}>Choose an image!</Input>
+            {/*<Input type="file" onChange={this.updateImage}>Choose an image!</Input>*/}
                 
             <Input type="submit" value="Post Recipe"/>
             

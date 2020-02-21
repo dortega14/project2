@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const iqIP = "10.41.41.195";
+const iqIP = "10.41.29.161";
+const iqIP2 = "10.41.42.80";
 const usfIP = "10.226.80.204";
 const local = "localhost";
 const ec2IP = "";
