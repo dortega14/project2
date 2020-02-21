@@ -20,9 +20,18 @@ import com.revature.connection.AwsConfig;
 @Service
 public class S3Service {
 	
+	/**
+	 * Automatically creates an association 
+	 * to the AwsConfig
+	 */
 	@Autowired
     AwsConfig config;
 
+	/**
+	 * Upload a MultipartFile to the bucket
+	 * @param file
+	 * @return 
+	 */
     public String upload(MultipartFile file) {
         File f;
         try{
@@ -37,6 +46,12 @@ public class S3Service {
         }
 
 
+    /**
+     * Converts a file into a MultipartFile
+     * @param file
+     * @return converted
+     * @throws IOException
+     */
     private File convertIntoFile(MultipartFile file) throws IOException {
         File converted = new File(file.getOriginalFilename());
         FileOutputStream fos = new FileOutputStream(converted);

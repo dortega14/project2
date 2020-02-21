@@ -16,29 +16,60 @@ import com.revature.model.Comment;
 @Service
 public class CommentService {
 	
+	/**
+	 * CommentDao instantiation.
+	 */
 	private CommentDao cd;
 
+	/**
+	 * Automatically creates an association
+	 * to the CommentDao
+	 * @param cd
+	 */
 	@Autowired
 	public void setCd(CommentDao cd) {
 		this.cd = cd;
 	}
 	
+	/**
+	 * Reads all comments in the database
+	 * @return findAll()
+	 */
 	public List<Comment> readAll() {
 		return cd.findAll();
 	}
 	
+	/**
+	 * Returns Comment by id
+	 * @param id
+	 * @return findById(id)
+	 */
 	public Comment findById(int id) {
 		return cd.findById(id);
 	}
 	
+	/**
+	 * Updates a comment
+	 * @param comment
+	 * @return update(comment)
+	 */
 	public Comment update(Comment comment) {
 		return cd.update(comment);
 	}
 	
+	/**
+	 * Inserts a comment into the database
+	 * @param comment
+	 * @return insert(comment)
+	 */
 	public Comment insert(Comment comment) {
 		return cd.insert(comment);
 	}
 	
+	/**
+	 * Deletes a comment
+	 * @param comment
+	 */
 	public void delete(Comment comment) {
 		cd.delete(comment);
 	}

@@ -31,7 +31,7 @@ public class CategoryService {
 	}
 
 	/**
-	 * 
+	 * Return all categoriesa
 	 * @return cd.findAll()
 	 */
 	public List<Category> readAll() {
@@ -39,7 +39,7 @@ public class CategoryService {
 	}
 	
 	/**
-	 * 
+	 * Returns category by id
 	 * @param id
 	 * @return findById(id)
 	 */
@@ -48,7 +48,7 @@ public class CategoryService {
 	}
 	
 	/**
-	 * 
+	 * Updates a category
 	 * @param cat
 	 * @return update(cat)
 	 */
@@ -57,7 +57,7 @@ public class CategoryService {
 	}
 	
 	/**
-	 * 
+	 * Inserts a category
 	 * @param cat
 	 * @return insert
 	 */
@@ -66,7 +66,7 @@ public class CategoryService {
 	}
 	
 	/**
-	 * 
+	 * Deletes a category
 	 * @param cat
 	 */
 	public void delete(Category cat) {

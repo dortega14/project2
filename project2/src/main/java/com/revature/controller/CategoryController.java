@@ -13,11 +13,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.revature.model.Category;
 import com.revature.service.CategoryService;
 
+/**
+ * @author TeamLeo
+ * Controller layer for the Category model.
+ */
 @Controller
 public class CategoryController {
 	
+	/**
+	 * Category service initialization.
+	 */
 	private CategoryService cs;
 
+	/**
+	 * Automatically creates associations
+	 * with CategoryService.
+	 * @param cs
+	 */
 	@Autowired
 	public void setCs(CategoryService cs) {
 		this.cs = cs;
