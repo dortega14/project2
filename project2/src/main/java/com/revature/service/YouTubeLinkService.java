@@ -18,29 +18,60 @@ import com.revature.model.YouTubeLink;
 @Service
 public class YouTubeLinkService {
 
+	/**
+	 * Initializes YouTubeLinkDao
+	 */
 	private YouTubeLinkDao ytld;
 
+	/**
+	 * Automatically creates an association 
+	 * to the YouTubeLinkDao
+	 * @param ytld
+	 */
 	@Autowired
 	public void setYtld(YouTubeLinkDao ytld) {
 		this.ytld = ytld;
 	}
 
+	/**
+	 * Returns all Youtube links
+	 * @return findAll()
+	 */
 	public List<YouTubeLink> readAll() {
 		return ytld.findAll();
 	}
 
+	/**
+	 * Returns YouTube link by id
+	 * @param id
+	 * @return findById(id)
+	 */
 	public YouTubeLink findById(int id) {
 		return ytld.findById(id);
 	}
 
+	/**
+	 * Updates a YouTube link
+	 * @param ytl
+	 * @return update(yt)
+	 */
 	public YouTubeLink update(YouTubeLink ytl) {
 		return ytld.update(ytl);
 	}
 
+	/**
+	 * Inserts a Youtube link
+	 * @param ytl
+	 * @return insert(yt)
+	 */
 	public YouTubeLink insert(YouTubeLink ytl) {
 		return ytld.insert(ytl);
 	}
 
+	/**
+	 * Deletes YouTubeLink
+	 * @param ytl
+	 */
 	public void delete(YouTubeLink ytl) {
 		ytld.delete(ytl);
 	}

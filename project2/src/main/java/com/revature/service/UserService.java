@@ -18,33 +18,69 @@ import com.revature.model.User;
 @Service
 public class UserService {
 	
+	/**
+	 * Initializes UserDao
+	 */
 	private UserDao ud;
 	
+	/**
+	 * Automatically creates an association 
+	 * to the UserDao
+	 * @param ud
+	 */
 	@Autowired
 	public void setUd(UserDao ud) {
 		this.ud = ud;
 	}
 
+	/**
+	 * Returns all users
+	 * @return finAll()
+	 */
 	public List<User> readAll() {
 		return ud.findAll();
 	}
 	
+	/**
+	 * Returns a user by id
+	 * @param id
+	 * @return findById(id)
+	 */
 	public User findById(int id) {
 		return ud.findById(id);
 	}
 
+	/**
+	 * Updates a user
+	 * @param user
+	 * @return update(user)
+	 */
 	public User update(User user) {
 		return ud.update(user);
 	}
-
+	
+	/**
+	 * Inserts a user
+	 * @param user
+	 * @return insert(user)
+	 */
 	public User insert (User user) {
 		return ud.insert(user);
 	}
 	
+	/**
+	 * Deletes a user
+	 * @param user
+	 */
 	public void delete(User user) {
 		ud.delete(user);
 	}
 	
+	/**
+	 * Returns User by name
+	 * @param name
+	 * @return findByName(name)
+	 */
 	public User findByUsername(String name) {
 		return ud.findByName(name);
 	}

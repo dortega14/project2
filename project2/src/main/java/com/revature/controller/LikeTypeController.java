@@ -20,8 +20,15 @@ import com.revature.service.LikeTypeService;
 @Controller
 public class LikeTypeController {
 	
+	/**
+	 * Initialized LikeTypeService
+	 */
 	private LikeTypeService lts;
 
+	/**
+	 * Automatically creates associations to LikeTypeService
+	 * @param lts
+	 */
 	@Autowired
 	public void setLts(LikeTypeService lts) {
 		this.lts = lts;

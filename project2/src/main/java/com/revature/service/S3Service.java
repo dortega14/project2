@@ -30,7 +30,7 @@ public class S3Service {
 	/**
 	 * Upload a MultipartFile to the bucket
 	 * @param file
-	 * @return 
+	 * @return bucket URL
 	 */
     public String upload(MultipartFile file) {
         File f;
