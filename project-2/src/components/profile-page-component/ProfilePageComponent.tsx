@@ -14,7 +14,7 @@ import {
   Collapse
 } from "reactstrap";
 import { postComment } from "../../utilities/api";
-import SubmitCardComponent from "../submit-card-component/SubmitCardComponent";
+import { SubmitCardComponent } from "../submit-card-component/SubmitCardComponent";
 
 interface IPostState {
   limit: number;
@@ -119,7 +119,7 @@ export class ProfilePageComponent extends React.Component<
           <div>
             <Button color="primary" onClick={this.toggleSubmitCard}>Add post</Button>
             <Collapse isOpen={this.state.toggle}>
-              <SubmitCardComponent></SubmitCardComponent>
+              <SubmitCardComponent currUser={this.props.user}></SubmitCardComponent>
             </Collapse>
           </div>
           <div>

@@ -1,6 +1,6 @@
 import { IState } from "../../reducers";
 import { connect } from "react-redux";
-import SubmitCardComponent from "./SubmitCardComponent";
+import { SubmitCardComponent } from "./SubmitCardComponent";
 
 
 
@@ -11,7 +11,6 @@ const mapStateToProps = (state: IState) => {
 };
 
 const mapDispatchToProps = {
-
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SubmitCardComponent)

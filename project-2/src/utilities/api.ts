@@ -36,11 +36,11 @@ export const authenticateUser = async (username:string, password:string) => {
 }
 
 export const hitLike = (body: ILike) => {
-    return axiosConfig.post('like.app', body);
+    return axiosConfig.post('newlike.app', body);
 }
 
 export const postComment = (body: IComment) => {
-    return axiosConfig.post('cmnt.app', body);
+    return axiosConfig.post('newcomm.app', body);
 }
 
 export const regUser = (body: IRegister) => {
