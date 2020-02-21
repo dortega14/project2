@@ -4,21 +4,21 @@ import { Form, Input } from 'reactstrap';
 import IUser from '../../model/IUser';
 
 interface IForgotState {
-    username: string
+    email: string
 }
 
 export class ForgotPasswordComponent extends React.Component<any, IForgotState> {
     constructor (props:any) {
         super(props);
         this.state = {
-            username: ""
+            email: ""
         }
     }
 
-    updateUsername = (event: any) => {
+    updateEmail = (event: any) => {
         this.setState({
             ...this.state,
-            username: event.target.value
+            email: event.target.value
         });
     }
 
@@ -26,11 +26,11 @@ export class ForgotPasswordComponent extends React.Component<any, IForgotState> 
         event.preventDefault();
         let user:IUser = {
             userId:0,
-            username:this.state.username,
+            username:"",
             password:"",
             firstName:"",
             lastName:"",
-            email:""
+            email:this.state.email
         }
         sendEmail(user);
     }
@@ -39,7 +39,7 @@ export class ForgotPasswordComponent extends React.Component<any, IForgotState> 
         return (
             <>
                 <Form onSubmit={this.sendRecovery}>
-                    <Input type="text" onChange={this.updateUsername} placeholder="Enter username, please"/>
+                    <Input type="text" onChange={this.updateEmail} placeholder="Enter email, please"/>
                     <Input type="submit">Send me the email!</Input>
                 </Form>
             </>

@@ -48,8 +48,8 @@ export class ResetPasswordComponent extends React.Component<any, IPasswordState>
         return (
             <>
     	        <Form onSubmit={this.resetPassword}>
-                    <Input type="text" onChange={this.updateUsername}>username</Input>
-                    <Input type="text" onChange={this.updatePassword}>New Password</Input>
+                    <Input type="text" onChange={this.updateUsername} placeholder="username">username</Input>
+                    <Input type="password" onChange={this.updatePassword} placeholder="password">New Password</Input>
                     <Input type="submit">Submit new password</Input>
                 </Form>
             </>
