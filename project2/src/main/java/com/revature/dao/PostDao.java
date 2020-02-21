@@ -10,6 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.model.Post;
 
+/**
+ * @author TeamLeo
+ * Contains the CRUD methods for the Post Model.
+ */
 @Repository
 @Transactional
 public class PostDao {

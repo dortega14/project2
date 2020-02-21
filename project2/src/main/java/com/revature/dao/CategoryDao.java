@@ -9,6 +9,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.model.Category;
 
+/**
+ * @author TeamLeo
+ * Contains the CRUD
+ */
 @Repository
 @Transactional
 public class CategoryDao {
@@ -44,7 +48,6 @@ public class CategoryDao {
 	}
 
 	public Category findByName(String name) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

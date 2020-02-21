@@ -8,13 +8,9 @@ import org.springframework.stereotype.Service;
 import com.revature.dao.PostDao;
 import com.revature.model.Post;
 /**
- * 
  * @author TeamLeo
- * <br>
- * <br>
  * This class is the only class that can communicate with the PostDao class inside of the Dao layer.
- * 
- *
+ * Service layer for the Post model.
  */
 @Service
 public class PostService {

@@ -10,6 +10,10 @@ import org.springframework.stereotype.Repository;
 
 import com.revature.model.Comment;
 
+/**
+ * @author TeamLeo
+ * Contains the CRUD methods for the Comment Model.
+ */
 @Repository
 @Transactional
 public class CommentDao {

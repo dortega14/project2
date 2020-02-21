@@ -11,13 +11,9 @@ import org.springframework.stereotype.Service;
 import com.revature.dao.UserDao;
 import com.revature.model.User;
 /**
- * 
  * @author TeamLeo
- * <br>
- * <br>
  * This class is the only class that can communicate with the UserDao class inside of the Dao layer.
- * 
- *
+ * Service layer for the User model.
  */
 @Service
 public class UserService {
@@ -61,21 +57,26 @@ public class UserService {
         {
             MessageDigest md = MessageDigest.getInstance("md5");
             
-            // digest() method is called to calculate message digest 
-            //  of an input digest() return array of byte 
+            /**
+             * digest() method is called to calculate message digest 
+             * of an input digest() return array of byte
+             */ 
             byte[] messageDigest = md.digest(toHash.getBytes()); 
   
-            // Convert byte array into signum representation 
+            /**
+             * Converts byte array into signum representation. 
+             */
             BigInteger no = new BigInteger(1, messageDigest); 
   
-            // Convert message digest into hex value 
+            /**
+             * Converts message digest into hex value. 
+             */
             hashText = no.toString(16); 
             while (hashText.length() < 32) { 
                 hashText = "0" + hashText; 
             }
         } catch (NoSuchAlgorithmException e)
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 

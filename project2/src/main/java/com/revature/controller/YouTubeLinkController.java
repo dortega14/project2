@@ -14,6 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.revature.model.YouTubeLink;
 import com.revature.service.YouTubeLinkService;
 
+/**
+ * @author TeamLeo
+ * Controller layer for the YouTubeLink model.
+ */
 @Controller
 public class YouTubeLinkController {
 

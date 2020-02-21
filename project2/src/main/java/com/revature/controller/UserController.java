@@ -18,6 +18,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.revature.model.User;
 import com.revature.service.UserService;
 
+/**
+ * @author TeamLeo
+ * Controller layer for the User model.
+ */
 @Controller
 @CrossOrigin(origins = "http://localhost:3000")
 public class UserController {

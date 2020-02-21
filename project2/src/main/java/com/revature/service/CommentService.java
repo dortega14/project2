@@ -9,13 +9,9 @@ import com.revature.dao.CommentDao;
 import com.revature.model.Comment;
 
 /**
- * 
  * @author TeamLeo
- * <br>
- * <br>
  * This class is the only class that can communicate with the CommentDao class inside of the Dao layer.
- * 
- *
+ * Service layer for the Comment model.
  */
 @Service
 public class CommentService {

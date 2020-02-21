@@ -16,6 +16,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.revature.model.Profile;
 import com.revature.service.ProfileService;
 
+/**
+ * @author TeamLeo
+ * Controller layer for the profile model.
+ */
 @Controller
 @CrossOrigin(origins = "http://localhost:3000")
 public class ProfileController {

@@ -9,13 +9,9 @@ import com.revature.dao.LikeDao;
 import com.revature.model.Like;
 
 /**
- * 
  * @author TeamLeo
- * <br>
- * <br>
  * This class is the only class that can communicate with the LikeDao class inside of the Dao layer.
- * 
- *
+ * Service layer for the Like model.
  */
 @Service
 public class LikeService {

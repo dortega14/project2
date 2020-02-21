@@ -10,13 +10,10 @@ import com.revature.model.Post;
 import com.revature.model.YouTubeLink;
 
 /**
- * 
- * @author TeamLeo <br>
- *         <br>
- *         This class is the only class that can communicate with the
- *         YouTubeLinkDao class inside of the Dao layer.
- * 
- *
+ * @author TeamLeo
+ * This class is the only class that can communicate with the
+ * YouTubeLinkDao class inside of the Dao layer.
+ * Service layer for the YouTubeLink model.
  */
 @Service
 public class YouTubeLinkService {
@@ -48,7 +45,12 @@ public class YouTubeLinkService {
 		ytld.delete(ytl);
 	}
 
-	// * Gets and returns the front of a youtube link
+	/**
+	 * Gets and returns the front of a youtube link
+	 * @param recipe
+	 * @param start
+	 * @return start
+	 */
 	private static int getFront(String recipe, int start) {
 		if (start < 7)
 			return start;
@@ -66,8 +68,13 @@ public class YouTubeLinkService {
 			return start;
 	}
 
-	// * Gets and returns the end of the time segment of a youtube link, given the
-	// start of the time number within the link
+	/**
+	 * Gets and returns the end of the time segment of a youtube link, given the
+	 * start of the time number within the link
+	 * @param recipe
+	 * @param n
+	 * @return n
+	 */
 	private static int endOfTime(String recipe, int n) {
 		while (n < recipe.length()) {
 			try {
@@ -81,8 +88,12 @@ public class YouTubeLinkService {
 		return n;
 	}
 
-	// * We have a ?t= to get the time and a ?v= to get the video. Either may be
-	// present or not
+	/**
+	 * We have a ?t= to get the time and a ?v= to get the video. 
+	 * Either may be present or not.
+	 * @param recipe
+	 * @param start
+	 */
 	private static int getEnd(String recipe, int start) {
 		if (recipe.contains("?v=")) // Check if we have the video question
 		{
@@ -110,7 +121,11 @@ public class YouTubeLinkService {
 			return n + 14; // Return the end of the link
 	}
 
-	// * This is to grab the youtube link if it is a youtube.com link
+	/**
+	 * This is to grab the youtube link if it is a youtube.com link
+	 * @param recipe
+	 * @return temp
+	 */
 	private static String grabYouTube(String recipe) {
 		if (recipe.contains("youtube.com/watch?v=")) {
 			int start = 0;
@@ -133,7 +148,11 @@ public class YouTubeLinkService {
 		return null;
 	}
 
-	// * This is to grab the youtube link if it is a youtu.be link
+	/**
+	 * This is to grab the youtube link if it is a youtu.be link
+	 * @param recipe
+	 * @return temp
+	 */
 	private static String grabYouTu(String recipe) {
 		if (recipe.contains("youtu.be/")) {
 			int start = 0;

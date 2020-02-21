@@ -9,6 +9,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.model.Profile;
 
+/**
+ * @author TeamLeo
+ * Contains the CRUD methods for the Profile Model.
+ */
 @Repository
 @Transactional
 public class ProfileDao {

@@ -9,6 +9,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.model.User;
 
+/**
+ * @author TeamLeo
+ * Contains the CRUD methods for the User Model.
+ */
 @Repository
 @Transactional
 public class UserDao {

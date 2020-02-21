@@ -9,13 +9,9 @@ import com.revature.dao.ProfileDao;
 import com.revature.model.Profile;
 
 /**
- * 
  * @author TeamLeo
- * <br>
- * <br>
  * This class is the only class that can communicate with the ProfileDao class inside of the Dao layer.
- * 
- *
+ * Service layer for the Profile model.
  */
 @Service
 public class ProfileService {

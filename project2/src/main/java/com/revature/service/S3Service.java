@@ -12,6 +12,11 @@ import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.revature.connection.AwsConfig;
 
+/**
+ * @author TeamLeo
+ * Service layer for the AWS
+ * Simple Storage Service.
+ */
 @Service
 public class S3Service {
 	

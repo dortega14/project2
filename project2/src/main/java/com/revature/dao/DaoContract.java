@@ -5,6 +5,12 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * @author TeamLeo
+ * This interface serves as the blueprint 
+ * for the DAO.
+ * @param <T>
+ */
 @Repository
 public interface DaoContract<T> {
 

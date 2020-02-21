@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 import com.revature.dao.LikeTypeDao;
 import com.revature.model.LikeType;
 
+/**
+ * @author TeamLeo
+ * Service layer for the LikeType model.
+ */
 @Service
 public class LikeTypeService {
 	

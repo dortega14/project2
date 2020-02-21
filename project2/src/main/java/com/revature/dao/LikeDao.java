@@ -9,6 +9,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.model.Like;
 
+/**
+ * @author TeamLeo
+ * Contains the CRUD methods for the Like Model.
+ */
 @Repository
 @Transactional
 public class LikeDao {

@@ -19,6 +19,11 @@ import com.revature.model.User;
 import com.revature.service.PostService;
 import com.revature.service.UserService;
 
+
+/**
+ * @author TeamLeo
+ * Controller layer for the Post model.
+ */
 @Controller
 @CrossOrigin(origins = "http://localhost:3000")
 public class PostController {

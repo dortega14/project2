@@ -15,6 +15,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.revature.model.Like;
 import com.revature.service.LikeService;
 
+/**
+ * @author TeamLeo
+ * Controller layer for the Like model.
+ */
 @Controller
 @CrossOrigin(origins = "http://localhost:3000")
 public class LikeController {

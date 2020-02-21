@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.revature.model.LikeType;
 import com.revature.service.LikeTypeService;
 
+/**
+ * @author TeamLeo
+ * Controller layer for the LikeType model.
+ */
 @Controller
 public class LikeTypeController {
 	

@@ -10,6 +10,10 @@ import org.springframework.stereotype.Repository;
 
 import com.revature.model.YouTubeLink;
 
+/**
+ * @author TeamLeo
+ * Contains the CRUD methods for the YouTubeLink Model.
+ */
 @Repository
 @Transactional
 public class YouTubeLinkDao {
