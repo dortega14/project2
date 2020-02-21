@@ -75,4 +75,19 @@ public class UserController {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
 		}
 	}
+	
+	@RequestMapping(method = RequestMethod.POST, value = "/reeee.app", produces = "application/json")
+	public ResponseEntity<User> resetPassword(@RequestBody User user) {
+		String username = user.getUsername();
+		String password = user.getPassword();
+		
+		User u = us.findByUsername(username);
+		if (u != null) {
+			u.setPassword(password);
+			us.update(u);
+			return new ResponseEntity<>(HttpStatus.ACCEPTED);
+		}
+		
+		return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+	}
 }

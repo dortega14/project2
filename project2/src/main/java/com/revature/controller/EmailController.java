@@ -19,20 +19,24 @@ public class EmailController {
 
 	@Autowired
 	EmailService ms;
+	
 	@Autowired
 	UserService us;
 
-	@RequestMapping(method = RequestMethod.POST, value = "/recovery.app", 
-			consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
-			produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+	// @RequestMapping(method = RequestMethod.POST, value = "/recovery.app",
+	// consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
+	// produces = {MediaType.APPLICATION_ATOM_XML_VALUE,
+	// MediaType.APPLICATION_JSON_VALUE})
+	@RequestMapping(method = RequestMethod.POST, value = "/recovery.app", consumes = "application/json")
 	public @ResponseBody void sendEmail(@RequestBody User user) {
-		String username = user.getUsername();
-		User u = us.findByUsername(username);
-		String mail = u.getEmail();
-		try {
-			ms.sendEmail(mail);
-		} catch (Exception e) {
-			e.printStackTrace();
+		String email = user.getEmail();
+		if (us.findUserByEmail(email) != null) {
+			String mail = email;
+			try {
+				ms.sendEmail(mail);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }

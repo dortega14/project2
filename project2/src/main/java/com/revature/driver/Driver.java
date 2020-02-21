@@ -40,8 +40,8 @@ public class Driver {
 //		initializePostWithYtLink();
 //		initializeYtLink();
 //		tenUserPosts();
-		userPost();
-//		findByEmail();
+//		userPost();
+		findByEmail();
 	}
 	
 	private static void userPost() {

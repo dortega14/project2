@@ -4,15 +4,15 @@ public class Email {
 
 	// Replace sender@example.com with your "From" address.
 	// This address must be verified.
-	final private String FROM = "dave.ort14@gmail.com";
+	final private String FROM = "palkia.welch@gmail.com";
 	final private String FROMNAME = "Recipes R Us!";
 	// Replace recipient@example.com with a "To" address. If your account
 	// is still in the sandbox, this address must be verified.
 	private String to;
 	// Replace smtp_username with your Amazon SES SMTP user name.
-	final private String SMTP_USERNAME = "";
+	final private String SMTP_USERNAME = "AKIA4GGH7TLVNH2HPS2B";
 	// Replace smtp_password with your Amazon SES SMTP password.
-	private final String SMTP_PASSWORD = "";
+	private final String SMTP_PASSWORD = "BIV7XY32UmSQVeLcz/owmROznsa+gkweXJYfN8sDEadj";
 	// The name of the Configuration Set to use for this message.
 	// If you comment out or remove this variable, you will also need to
 	// comment out or remove the header below.
@@ -26,10 +26,12 @@ public class Email {
 	private final int PORT = 587;
 	private final String SUBJECT = "Pasword Reset";
 	// TODO: fix this
+	
+	String linkIp = "";
+	
 	private final String BODY = String.join(System.getProperty("line.separator"), "<h1>Password Reset</h1>",
-			"<p>This email was sent with Amazon SES using the ",
-			"<a href='https://github.com/javaee/javamail'>Javamail Package</a>",
-			" for <a href='https://www.java.com'>Java</a>.");
+			"<p>This email was sent with Amazon SES using the </p>",
+			"<a href='http://localhost:3000/resetpassword'>Javamail Package</a>");
 
 	public String getTo() {
 		return to;
