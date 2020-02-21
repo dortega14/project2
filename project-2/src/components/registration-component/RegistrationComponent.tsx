@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../css/Register.css'
+import '../../css/Register.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import { NavLink} from 'react-router-dom';
 import { regUser } from '../../utilities/api';

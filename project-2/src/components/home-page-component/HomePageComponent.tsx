@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/Main.css";
+import "../../css/Main.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import { NavLink, Redirect } from "react-router-dom";
 import IUser from "../../model/IUser";

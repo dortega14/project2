@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Main.css'
+import '../../css/Main.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import { NavLink} from 'react-router-dom';
 

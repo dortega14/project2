@@ -11,7 +11,6 @@ const mapStateToProps = (state: IState) => {
 };
 
 const mapDispatchToProps = {
-    
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SubmitCardComponent)
