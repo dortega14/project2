@@ -1,6 +1,10 @@
+import { ILikeType } from "./ILikeType";
+import { IPost } from "./IPost";
+import IUser from "./IUser";
+
 export interface ILike{
     likeId?: number;
-    likeLikeType: number;
-    likePost: number;
-    likeUser: string;
+    likeLikeType: ILikeType;
+    likePost: IPost;
+    likeUser: IUser;
 }

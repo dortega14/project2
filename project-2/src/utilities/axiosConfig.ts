@@ -7,7 +7,7 @@ const ec2IP = "";
 const desky = "192.168.137.192"
 
 export const axiosConfg = axios.create({
-    baseURL: 'http://' + usfIP + ':8080/project2'
+    baseURL: 'http://' + iqIP + ':8080/project2'
 });
  
 export default axiosConfg;
