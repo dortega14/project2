@@ -53,6 +53,10 @@ public class UserService {
 		return ud.findByName(name);
 	}
 	
+	public User findUserByEmail(String email) {
+		return ud.findByEmail(email);
+	}
+	
 	public boolean checkPassword(String username, String password, User u)
     {
         String toHash = username + password + "salt";

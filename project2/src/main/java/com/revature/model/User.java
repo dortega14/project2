@@ -39,7 +39,6 @@ public class User {
 	private String email;
 
 	@OneToOne(mappedBy = "profileUser", fetch = FetchType.EAGER)
-	@JsonIgnore
 	private Profile profile;
 
 	@OneToMany(mappedBy = "postUser", fetch = FetchType.EAGER)

@@ -16,12 +16,20 @@ import org.aspectj.lang.annotation.Aspect;
  * The AspectClass is responsible for dealing with cross cut concerns.
  * <br>
  * Primarily when implementing the logger, the aspect class uses Advice methods in order to identify point cuts and 
- * implement the logger when the c
+ * implement the logger when the the specific method is called. Specifically, when methods in the Dao are executed, the logger
+ * will log which method it is, so that we get a better idea of the action the user is taking.
  */
 @Component
 @Aspect
 public class AspectClass {
 	
+	/**
+	 * 
+	 * @param TeamLeo
+	 * <br>
+	 * <br>
+	 * This advice method executes when the findAll() method in the Dao layer gets called and logs it.
+	 */
 	@After("execution(* findAll(..))")
 	public void adviceMethodAfterFindAll(JoinPoint jp) {
 		Log4j.log.info("findAll method in the Dao has ran.");

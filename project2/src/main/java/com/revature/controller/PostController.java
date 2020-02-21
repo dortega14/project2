@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.revature.model.PaginateReq;
 import com.revature.model.Post;
 import com.revature.model.User;
 import com.revature.service.PostService;
@@ -37,11 +38,13 @@ public class PostController {
 		return new ResponseEntity<>(ps.readAll(), HttpStatus.ACCEPTED);
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value = "/userpost{id}.app", produces = "application/json")
-    public ResponseEntity<List<Post>> readAUsersPosts(@RequestParam("offset") int offset,
-            @RequestParam("limit") int limit, @PathVariable("id") int id) {
+	@RequestMapping(method = RequestMethod.POST, value = "/userpost.app", produces = "application/json")
+	public ResponseEntity<List<Post>> readAUsersPosts(@RequestBody int id) {
         User u = us.findById(id);
-        return new ResponseEntity<>(ps.tenPosts(offset, limit, u.getUserId()), HttpStatus.ACCEPTED);
+        PaginateReq pr = new PaginateReq();
+        pr.setUser(u);
+        User user = pr.getUser();
+        return new ResponseEntity<>(ps.tenPosts(pr.getOffset(), pr.getLimit(), user.getUserId()), HttpStatus.ACCEPTED);
     }
 	 
 	@RequestMapping(method = RequestMethod.GET, value = "/post{id}.app", produces = "application/json")

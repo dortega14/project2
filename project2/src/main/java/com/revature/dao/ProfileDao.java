@@ -43,9 +43,9 @@ public class ProfileDao {
 		sesfact.getCurrentSession().delete(t);
 	}
 
-	public Profile findByName(String name) {
-		// TODO Auto-generated method stub
-		return null;
+	public Profile findByUserId(int id) {
+		return sesfact.getCurrentSession().createQuery("from Profile where profileUser = '" + id + "'", Profile.class)
+				.getSingleResult();
 	}
 
 }

@@ -41,11 +41,12 @@ public class Driver {
 //		initializeYtLink();
 //		tenUserPosts();
 		userPost();
-		
+//		findByEmail();
 	}
 	
 	private static void userPost() {
-		System.out.println(ps.findByUser(1));
+		User u = us.findById(1);
+		System.out.println(ps.findByUser(u.getUserId()));
 	}
 
 	private static void initializeCategory() {
@@ -113,6 +114,10 @@ public class Driver {
 	
 	private static void tenUserPosts() {
 		System.out.println(ps.tenPosts(0, 5, 1));
+	}
+	
+	private static void findByEmail() {
+		System.out.println(us.findUserByEmail("dave.ort14@gmail.com"));
 	}
 
 }

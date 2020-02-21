@@ -14,11 +14,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.revature.model.Profile;
+import com.revature.model.User;
 import com.revature.service.ProfileService;
+import com.revature.service.UserService;
 
 @Controller
 @CrossOrigin(origins = "http://localhost:3000")
 public class ProfileController {
+	
+	private UserService us;
 
 	private ProfileService ps;
 
@@ -34,7 +38,8 @@ public class ProfileController {
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/prof{id}.app", produces = "application/json")
 	public ResponseEntity<Profile> findProfileById(@PathVariable("id") int id){
-		return new ResponseEntity<>(ps.findById(id), HttpStatus.ACCEPTED);
+		User u = us.findById(id);
+		return new ResponseEntity<>(ps.findByUserId(u.getUserId()), HttpStatus.ACCEPTED);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, value = "/updateprof.app", produces = "application/json")

@@ -46,5 +46,9 @@ public class ProfileService {
 	public void delete(Profile prof) {
 		pd.delete(prof);
 	}
+	
+	public Profile findByUserId(int id) {
+		return pd.findByUserId(id);
+	}
 
 }
