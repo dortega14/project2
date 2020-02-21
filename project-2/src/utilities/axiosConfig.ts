@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const iqIP = "10.41.41.195";
-const usfIP = "10.226.80.204";
+const usfIP = "10.226.48.181";
 const local = "localhost";
 const ec2IP = "";
 const desky = "192.168.137.192"

@@ -63,9 +63,9 @@ export class PostCardComponent extends React.PureComponent<IPostProps> {
         </Row>
         <Row>
           <ButtonGroup>
-            <Button color="success" onClick={() => this.submitLike(1)}>Tasty</Button>
-            <Button color="warning" onClick={() => this.submitLike(2)}>Looks Good</Button>
-            <Button color="danger" onClick={() => this.submitLike(3)}>Needs Salt</Button>
+            <Button color="success" size="sm" onClick={() => this.submitLike(1)}>Tasty</Button>
+            <Button color="warning" size="sm" onClick={() => this.submitLike(2)}>Looks Good</Button>
+            <Button color="danger" size="sm" onClick={() => this.submitLike(3)}>Needs Salt</Button>
           </ButtonGroup>
         </Row>
         <Row>
