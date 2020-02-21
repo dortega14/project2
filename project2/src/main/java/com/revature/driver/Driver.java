@@ -16,6 +16,9 @@ import com.revature.service.PostService;
 import com.revature.service.UserService;
 import com.revature.service.YouTubeLinkService;
 
+/**
+ * This class is used to test CRUD methods.
+ */
 public class Driver {
 
 	public static ApplicationContext ac = new ClassPathXmlApplicationContext("Bean.xml");
